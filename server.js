@@ -13,4 +13,4 @@ app.all('*',(req,res)=>{
     res.send("<h1>404 boiii</h1>").status(404);
 });
 
-app.listen(65000,()=>{console.log("Listening at 34.83.209.8 port 65000")});
+app.listen(65000, "10.138.0.2", ()=>{console.log("Listening at IP 34.83.209.8 port 65000")});

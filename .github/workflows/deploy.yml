@@ -13,8 +13,8 @@ jobs:
         with:
           cwd: .
           command: c
-          files: images
-          outPath: images.tar.gz
+          files: VEX
+          outPath: media.tar.gz
       - name: Building
         uses: actions/upload-pages-artifact@v2
         with:

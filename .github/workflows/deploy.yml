@@ -2,8 +2,7 @@ name: Media hosting
 on: [push]
 jobs:
   # Build job
-  build:
-    # <Not provided for brevity>
+  build:s
     # At a minimum this job should upload artifacts using actions/upload-pages-artifact
     runs-on: ubuntu-latest
     steps:

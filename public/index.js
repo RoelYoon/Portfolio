@@ -67,7 +67,7 @@ controls.keys={
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();
     camera.getWorldDirection( direction );
-    let m = 3; 
+    let m = 1; 
     switch(keyEvent.key.toLowerCase()){
         case "w":
             camera.position.lerp( direction.multiplyScalar(m) );

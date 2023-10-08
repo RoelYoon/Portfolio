@@ -39,7 +39,7 @@ controls.enableZoom = true;
 
 //skybox
 const skyBoxInd = 1; //for randomization later when more skyboxes
-scene.background = new THREE.CubeTextureLoader()
+/*scene.background = new THREE.CubeTextureLoader()
 .setPath( 'https://roelyoon.github.io/Portfolio/Textures/Skybox/' )
 .load( [
             `px${skyBoxInd}.png`, //left
@@ -50,7 +50,7 @@ scene.background = new THREE.CubeTextureLoader()
             `nz${skyBoxInd}.png` //back
         ] );
 scene.background =  new THREE.Color( 'skyblue' );
-
+*/
 window.addEventListener('resize', ()=>{
     sizes.width = window.innerWidth;
     sizes.height = window.innerHeight;

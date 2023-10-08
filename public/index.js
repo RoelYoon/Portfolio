@@ -39,7 +39,7 @@ controls.enableZoom = false;
 
 //skybox
 const loader = new THREE.CubeTextureLoader();
-loader.setPath('textures/cube/skybox/');
+loader.setPath('Textures/Cube/Skybox/');
 
 const textureCube = loader.load( [
 	'px.png', 'nx.png',

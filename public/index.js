@@ -34,8 +34,8 @@ renderer.render(scene,camera);
 
 const controls = new OrbitControls(camera,canvas);
 controls.enableDamping=true;
-controls.enablePan = false;
-controls.enableZoom = false; 
+controls.enablePan = true;
+controls.enableZoom = true; 
 
 //skybox
 const skyBoxInd = 1; //for randomization later when more skyboxes
@@ -58,6 +58,7 @@ window.addEventListener('resize', ()=>{
     renderer.setSize(sizes.width,sizes.height);
 })
 
+/*
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();
     camera.getWorldDirection( direction );
@@ -70,7 +71,7 @@ document.body.addEventListener('keypress',(keyEvent)=>{
             camera.position.add( direction.multiplyScalar(-m) );
             break;
     }
-});
+});*/
 
 const loop = ()=>{
     controls.update(); 

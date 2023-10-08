@@ -61,13 +61,13 @@ window.addEventListener('resize', ()=>{
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();
     camera.getWorldDirection( direction );
-    let m = 10; 
+    let m = 1; 
     switch(keyEvent.key.toLowerCase()){
         case "w":
             camera.position.add( direction.multiplyScalar(m) );
             break;
         case "s":
-            camera.position.sub( direction.multiplyScalar(-m) );
+            camera.position.add( direction.multiplyScalar(-m) );
             break;
     }
 });

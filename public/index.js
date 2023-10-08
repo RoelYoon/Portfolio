@@ -35,7 +35,7 @@ renderer.render(scene,camera);
 const controls = new OrbitControls(camera,canvas);
 controls.enableDamping=true;
 controls.enablePan = false;
-controls.enableZoom = false; 
+controls.enableZoom = true; 
 
 //skybox
 const skyBoxInd = 1; //for randomization later when more skyboxes

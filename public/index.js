@@ -49,7 +49,6 @@ scene.background = new THREE.CubeTextureLoader()
             `pz${skyBoxInd}.png`, //center
             `nz${skyBoxInd}.png` //back
         ] );
-scene.background =  new THREE.Color( 'skyblue' );
 
 window.addEventListener('resize', ()=>{
     sizes.width = window.innerWidth;

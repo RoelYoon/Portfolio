@@ -41,12 +41,12 @@ controls.enableZoom = false;
 scene.background= new THREE.CubeTextureLoader()
 .setPath( 'https://roelyoon.github.io/Portfolio/Textures/Skybox/' )
 .load( [
-            'px.png',
-            'nx.png',
-            'py.png',
-            'ny.png',
-            'pz.png',
-            'nz.png'
+            'px.png', //left
+            'nx.png', //right
+            'py.png', //top
+            'ny.png', //down
+            'pz.png', //center
+            'nz.png' //back
         ] );;
 
 window.addEventListener('resize', ()=>{

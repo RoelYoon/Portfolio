@@ -63,7 +63,7 @@ controls.keys={
 	RIGHT: 'ArrowRight', // right arrow
 	BOTTOM: 'ArrowDown' // down arrow
 }
-/*
+
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();
     camera.getWorldDirection( direction );
@@ -76,7 +76,7 @@ document.body.addEventListener('keypress',(keyEvent)=>{
             camera.position.add( direction.multiplyScalar(-m) );
             break;
     }
-});*/
+});
 
 const loop = ()=>{
     controls.update(); 

@@ -47,7 +47,7 @@ const textureCube = loader.load( [
 	'pz.png', 'nz.png'
 ] );
 
-const skyMaterial = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
+const skyMaterial = new THREE.MeshBasicMaterial( {envMap: textureCube } );
 scene.background=skyMaterial;
 
 window.addEventListener('resize', ()=>{

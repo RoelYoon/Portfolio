@@ -57,7 +57,12 @@ window.addEventListener('resize', ()=>{
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);
 })
-
+controls.keys={
+	LEFT: 'a', //left arrow
+	UP: 'w', // up arrow
+	RIGHT: 'd', // right arrow
+	BOTTOM: 's' // down arrow
+}
 /*
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();

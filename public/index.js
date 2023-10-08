@@ -1,5 +1,6 @@
 import * as THREE from "/three";
 import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
+import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const scene = new THREE.Scene(); 
 
 const sizes = {
@@ -57,6 +58,20 @@ window.addEventListener('resize', ()=>{
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);
 })
+
+document.body.addEventListener('keypress',(keyEvent)=>{
+    let direction = new THREE.Vector3();
+    camera.getWorldDirection( direction );
+    let m = 10; 
+    switch(keyEvent.key.toLowerCase()){
+        case "w":
+            camera.position.add( direction.multiplyScalar(m) );
+            break;
+        case "s":
+            camera.position.sub( direction.multiplyScalar(-m) );
+            break;
+    }
+});
 
 const loop = ()=>{
     controls.update(); 

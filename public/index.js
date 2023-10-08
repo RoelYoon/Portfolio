@@ -34,7 +34,7 @@ renderer.render(scene,camera);
 
 const controls = new OrbitControls(camera,canvas);
 controls.enableDamping=true;
-controls.enabledPan = false;
+controls.enablePan = false;
 controls.enableZoom = false; 
 
 window.addEventListener('resize', ()=>{

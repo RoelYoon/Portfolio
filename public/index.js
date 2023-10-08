@@ -70,10 +70,10 @@ document.body.addEventListener('keypress',(keyEvent)=>{
     let m = 1; 
     switch(keyEvent.key.toLowerCase()){
         case "w":
-            camera.position.lerp( direction.multiplyScalar(m) );
+            camera.position.add( direction.multiplyScalar(m) );
             break;
         case "s":
-            camera.position.lerp( direction.multiplyScalar(-m) );
+            camera.position.add( direction.multiplyScalar(-m) );
             break;
     }
 });

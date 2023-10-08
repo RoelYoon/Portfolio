@@ -70,7 +70,7 @@ document.body.addEventListener('keypress',(keyEvent)=>{
     let m = 1; 
     switch(keyEvent.key.toLowerCase()){
         case "w":
-            camera.position.add( direction.multiplyScalar(m) );
+            camera.position.sub( camera.position.sub(direction.multiplyScalar(m) ));
             break;
         case "s":
             camera.position.add( direction.multiplyScalar(-m) );

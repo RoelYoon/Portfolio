@@ -37,6 +37,19 @@ controls.enableDamping=true;
 controls.enablePan = false;
 controls.enableZoom = false; 
 
+//skybox
+const loader = new THREE.CubeTextureLoader();
+loader.setPath('textures/cube/skybox/');
+
+const textureCube = loader.load( [
+	'px.png', 'nx.png',
+	'py.png', 'ny.png',
+	'pz.png', 'nz.png'
+] );
+
+const skyMaterial = new THREE.MeshBasicMaterial( { color: 0xffffff, envMap: textureCube } );
+scene.background=skyMaterial;
+
 window.addEventListener('resize', ()=>{
     sizes.width = window.innerWidth;
     sizes.height = window.innerHeight;

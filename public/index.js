@@ -58,10 +58,10 @@ window.addEventListener('resize', ()=>{
     renderer.setSize(sizes.width,sizes.height);
 })
 controls.keys={
-	LEFT: 'a', //left arrow
-	UP: 'w', // up arrow
-	RIGHT: 'd', // right arrow
-	BOTTOM: 's' // down arrow
+	LEFT: 'KeyA', //left arrow
+	UP: 'KeyW', // up arrow
+	RIGHT: 'KeyD', // right arrow
+	BOTTOM: 'KeyS' // down arrow
 }
 /*
 document.body.addEventListener('keypress',(keyEvent)=>{

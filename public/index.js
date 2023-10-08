@@ -67,13 +67,13 @@ controls.keys={
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();
     camera.getWorldDirection( direction );
-    let m = 1; 
+    let m = 2; 
     switch(keyEvent.key.toLowerCase()){
         case "w":
-            camera.position.sub( camera.position.sub(direction.multiplyScalar(m) ));
+            camera.position.lerp( direction.multiplyScalar(m),0.1);
             break;
         case "s":
-            camera.position.add( direction.multiplyScalar(-m) );
+            camera.position.lerp( direction.multiplyScalar(-m),0.1);
             break;
     }
 });

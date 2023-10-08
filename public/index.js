@@ -42,12 +42,12 @@ const skyBoxInd = 1; //for randomization later when more skyboxes
 scene.background= new THREE.CubeTextureLoader()
 .setPath( 'https://roelyoon.github.io/Portfolio/Textures/Skybox/' )
 .load( [
-            `px${skyBoxInd}.png`, //left
-            `nx${skyBoxInd}.png`, //right
-            `py${skyBoxInd}.png`, //top
-            `ny${skyBoxInd}.png`, //down
-            `pz${skyBoxInd}.png`, //center
-            `nz${skyBoxInd}.png` //back
+            `px1.png`, //left
+            `nx1.png`, //right
+            `py1.png`, //top
+            `ny1.png`, //down
+            `pz1.png`, //center
+            `nz1.png` //back
         ] );
 
 window.addEventListener('resize', ()=>{

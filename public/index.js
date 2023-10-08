@@ -38,17 +38,16 @@ controls.enablePan = false;
 controls.enableZoom = false; 
 
 //skybox
-const loader = new THREE.CubeTextureLoader();
-loader.setPath('Textures/Cube/Skybox/');
-
-const textureCube = loader.load( [
-	'px.png', 'nx.png',
-	'py.png', 'ny.png',
-	'pz.png', 'nz.png'
-] );
-
-const skyMaterial = new THREE.MeshBasicMaterial( {envMap: textureCube } );
-scene.background=skyMaterial;
+scene.background= new THREE.CubeTextureLoader()
+.setPath( 'https://roelyoon.github.io/Portfolio/Textures/Skybox/' )
+.load( [
+            'px.png',
+            'nx.png',
+            'py.png',
+            'ny.png',
+            'pz.png',
+            'nz.png'
+        ] );;
 
 window.addEventListener('resize', ()=>{
     sizes.width = window.innerWidth;

@@ -21,7 +21,7 @@ scene.add(mesh); */
 let models = [];
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
-	gltf.scene.rotateY(Math.PI/2);
+	gltf.scene.rotateX(Math.PI/2);
     models.push(gltf.scene)
     scene.add( gltf.scene );
 }, undefined, function ( error ) {

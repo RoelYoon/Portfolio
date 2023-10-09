@@ -34,4 +34,5 @@ body,html{
 .sprites{
     background-color:transparent; 
     border: 0px;
+    z-index:0;
 }

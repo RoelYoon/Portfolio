@@ -37,7 +37,7 @@ const controls = new OrbitControls(camera,canvas);
 controls.enableDamping=true;
 controls.enablePan = false;
 controls.enableZoom = false; 
-controls.target = new THREE.Vector3(0,0,30);
+controls.target.x=0;controls.target.y=0;controls.target.z=0;
 
 //skybox
 const skyBoxInd = 1; //for randomization later when more skyboxes

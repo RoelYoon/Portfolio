@@ -22,12 +22,14 @@ body,html{
     z-index: 1; 
 }
 #leftArrow{
-    transform: scale(0.2);
+    top:50%;
+    transform: scale(0.2) translate(0,-50%);
     position:absolute;
     left:-200px;
 }
 #rightArrow{
-    transform: scale(0.2);
+    top:50%;
+    transform: scale(0.2) translate(0,-50%);
     position: absolute;
     right:-200px;
 }

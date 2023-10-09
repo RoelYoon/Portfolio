@@ -67,6 +67,8 @@ function leftArrClick(){
 function rightArrClick(){
     console.log("right");
 }
+querySelector("#leftArrow").addEventListener("onclick",leftArrClick());
+querySelector("#rightArrow").addEventListener("onclick",rightArrClick());
 
 window.addEventListener('resize', ()=>{
     sizes.width = window.innerWidth;

@@ -21,6 +21,15 @@ body,html{
     left: 0;
     z-index: 1; 
 }
+#leftArrow{
+    transform: scale(0.2);
+}
+#rightArrow{
+    transform: scale(0.2);
+    margin-left:auto;
+    margin-right: 0;
+
+}
 .sprites{
     background-color:transparent; 
     border: 0px;

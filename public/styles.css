@@ -26,12 +26,14 @@ body,html{
     transform: scale(0.2);
     position:absolute;
     left:-200px;
+    opacity:50%;
 }
 #rightArrow{
     top:20%;
     transform: scale(0.2);
     position: absolute;
     right:-200px;
+    opacity:50%;
 }
 .sprites{
     background-color:transparent; 

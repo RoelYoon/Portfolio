@@ -69,7 +69,8 @@ anim.push(function(id){
 scene.add( panel );
 
 //programming challenge 1 title
-const mainCode1 = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
+const mainCode1Material = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
+const mainCode1 = new THREE.Sprite( mainCode1Material );
 mainCode1.position.set(moveX*id,0,moveZ*id);
 scene.add( mainCode1 );
 

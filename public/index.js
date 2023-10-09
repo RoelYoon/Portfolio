@@ -67,8 +67,8 @@ function leftArrClick(){
 function rightArrClick(){
     console.log("right");
 }
-document.querySelector("#leftArrow").firstChild.addEventListener("onclick",leftArrClick());
-document.querySelector("#rightArrow").firstChild.addEventListener("onclick",rightArrClick());
+document.getElementById("leftArrow").children[0].addEventListener("onclick",leftArrClick());
+document.getElementById("rightArrow").children[0].addEventListener("onclick",rightArrClick());
 
 window.addEventListener('resize', ()=>{
     sizes.width = window.innerWidth;

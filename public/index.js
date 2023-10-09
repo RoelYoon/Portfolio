@@ -71,6 +71,7 @@ function leftArrClick(){
     }
     console.log(curPos)
     console.log(posChange)
+    console.log(camera.position)
 }
 function rightArrClick(){
     if(curPos!=cameraPositions.length-1){
@@ -79,6 +80,7 @@ function rightArrClick(){
     }
     console.log(curPos)
     console.log(posChange)
+    console.log(camera.position)
 }
 
 document.getElementById("leftArrow").onclick = leftArrClick;

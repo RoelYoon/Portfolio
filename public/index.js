@@ -47,7 +47,7 @@ let panelChange = 50;
 const panelGeometry = new THREE.BoxGeometry( 5, 5, 1 ); 
 const panelMaterial = new THREE.MeshBasicMaterial( {color: 'red'} ); 
 const panel = new THREE.Mesh( panelGeometry, panelMaterial ); 
-panel.position.set(0+moveX*id,10,0+moveZ*id);
+panel.position.set(0+moveX*id,9,0+moveZ*id);
 panel.rotateZ(0.78);
 models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));
@@ -74,7 +74,7 @@ scene.add( panel );
 const mainCode1Material = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
 const mainCode1 = new THREE.Sprite( mainCode1Material );
 mainCode1.position.set(moveX*id,0,moveZ*id);
-mainCode1.scale.set(10*mainCode1.scale.x,9*mainCode1.scale.y,1);
+mainCode1.scale.set(10*mainCode1.scale.x,10*mainCode1.scale.y,1);
 scene.add( mainCode1 );
 
 

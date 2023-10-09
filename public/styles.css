@@ -21,3 +21,6 @@ body,html{
     left: 0;
     z-index: 1; 
 }
+.sprites{
+    background-color:transparent; 
+}

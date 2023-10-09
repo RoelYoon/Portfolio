@@ -69,12 +69,16 @@ function leftArrClick(){
         curPos--; 
         posChange=true;
     }
+    console.log(curPos)
+    console.log(posChange)
 }
 function rightArrClick(){
     if(curPos!=cameraPositions.length-1){
         curPos++; 
         posChange=true;
     }
+    console.log(curPos)
+    console.log(posChange)
 }
 
 document.getElementById("leftArrow").onclick = leftArrClick;
@@ -106,8 +110,8 @@ const loop = ()=>{
     controls.update(); 
     renderer.render(scene,camera); 
     if(posChange){
-    camera.position.set(cameraPositions[curPos]);
-    posChange=false;
+        camera.position.set(cameraPositions[curPos]);
+        posChange=false;
     }
     window.requestAnimationFrame(loop); 
 }

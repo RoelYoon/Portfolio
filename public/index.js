@@ -37,7 +37,7 @@ controls.enableDamping=true;
 controls.enablePan = true;
 controls.enableZoom = true; 
 
-controls.target.set(camera.position);
+controls.target.set(0,10,0);
 
 //skybox
 const skyBoxInd = 1; //for randomization later when more skyboxes

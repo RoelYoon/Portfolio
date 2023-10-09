@@ -62,7 +62,7 @@ scene.add( rightArrow );*/
 
 //functions
 let curPos = 0; 
-const cameraPositions = [new THREE.Vector3( 0, 0, 30 ),new THREE.Vector3( 20, 0, 30 )];
+const cameraPositions = [new THREE.Vector3( 0, 0, 30 ),new THREE.Vector3( 100, 0, 30 )];
 let posChange = false; 
 function leftArrClick(){
     if(curPos!=0){

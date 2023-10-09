@@ -117,6 +117,7 @@ const loop = ()=>{
     camera.position.lerp(targetCameraPos,0.1);
     controls.target.lerp(targetOrbitPos,0.1);
     lerpFrames--;
+    console.log(lerpFrames);
     }
     controls.update(); 
     renderer.render(scene,camera); 

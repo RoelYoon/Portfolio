@@ -68,6 +68,8 @@ function leftArrClick(){
         curPos--;
         targetCameraPos.x-=50; 
         targetCameraPos.z-=20; 
+        controls.target.x-=50; 
+        controls.target.z-=20;
     }
     console.log(curPos)
     console.log(camera.position)
@@ -77,6 +79,14 @@ function rightArrClick(){
         curPos++;
         targetCameraPos.x+=50;
         targetCameraPos.z+=20;
+        controls.target.x+=50;
+        controls.target.z+=20; 
+    /*
+        const oldTargetPosition = controls.target.clone();
+        targetLookPos.x+=50; 
+        targetLookPos.z+=20;
+        const dPosition = oldTargetPosition.sub(controls.target);
+        camera.position.sub(dPosition);*/
     }
     console.log(curPos)
     console.log(camera.position)
@@ -108,6 +118,10 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 });
 
 const loop = ()=>{
+    const oldTargetPosition = controls.target.clone();
+    controls.target = someNewTarget;
+    const dPosition = oldTargetPosition.sub(controls.target);
+    camera.position.sub(dPosition);
     camera.position.lerp(targetCameraPos,0.1);
     controls.update(); 
     renderer.render(scene,camera); 

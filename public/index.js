@@ -24,7 +24,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 	gltf.scene.position.x-=9;
     gltf.scene.position.y+=4;
     gltf.scene.scale.set(5,5,5);
-    gltf.scene.rotateX(Math.PI/2);
+    gltf.scene.rotateX(Math.PI/1.8);
     models.push(gltf.scene)
     scene.add( gltf.scene );
 }, undefined, function ( error ) {

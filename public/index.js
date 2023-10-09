@@ -51,7 +51,7 @@ anim.push(function(id){
     if(models[id].material.color==0xFFFFFF){
         models[id].material.color=0x000000;
     }else{
-        models[id].material.color+=5;}console.log(models[id].material.color);
+        models[id].material.color+=0x000005;}console.log(models[id].material.color);
     }
     );
 scene.add( panel );

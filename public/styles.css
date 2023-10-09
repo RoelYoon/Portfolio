@@ -23,13 +23,13 @@ body,html{
 }
 #leftArrow{
     top:50%;
-    transform: scale(0.2) translate(0,-60%);
+    transform: scale(0.2);
     position:absolute;
     left:-200px;
 }
 #rightArrow{
     top:50%;
-    transform: scale(0.2) translate(0,-60%);
+    transform: scale(0.2);
     position: absolute;
     right:-200px;
 }

@@ -47,7 +47,7 @@ let panelChange = 50;
 const panelGeometry = new THREE.BoxGeometry( 5, 5, 1 ); 
 const panelMaterial = new THREE.MeshBasicMaterial( {color: 'red'} ); 
 const panel = new THREE.Mesh( panelGeometry, panelMaterial ); 
-panel.position.set(0+moveX*id-5,5,0+moveZ*id);
+panel.position.set(0+moveX*id,10,0+moveZ*id);
 panel.rotateZ(0.78);
 models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));

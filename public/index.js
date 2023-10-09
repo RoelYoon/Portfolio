@@ -37,7 +37,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 } );
 
 //light
-const titleBackPLight = new THREE.PointLight(0xffffff,100000);
+const titleBackPLight = new THREE.PointLight(0xffffff,5000);
 const titleTopLight = new THREE.PointLight(0xffffff,100000);
 titleBackPLight.position.set(0,-2,-4); 
 titleTopLight.position.set(0,10,4); 

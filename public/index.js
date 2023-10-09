@@ -62,12 +62,9 @@ scene.add( rightArrow );*/
 
 //functions
 let curPos = 0; 
-let lerpTime = 0; 
 const targetCameraPos = new THREE.Vector3( 0, 0, 30 );
 const targetOrbitPos = new THREE.Vector3( 0, 0, 0 );
-var clock = new THREE.Clock();
-const moveX=20; const moveZ=20;
-let orbitX=0; let orbitY=0; 
+const moveX=20; const moveZ=30;
 function leftArrClick(){
     if(curPos!=0){
         curPos--;
@@ -75,9 +72,6 @@ function leftArrClick(){
         targetCameraPos.z-=moveZ; 
         targetOrbitPos.x-=moveX; 
         targetOrbitPos.z-=moveZ;
-        orbitX=-1; 
-        orbitY=-1; 
-        lerpTime=2; 
     }
     console.log(curPos)
     console.log(camera.position)
@@ -89,18 +83,9 @@ function rightArrClick(){
         targetCameraPos.z+=moveZ;
         targetOrbitPos.x+=moveX;
         targetOrbitPos.z+=moveZ; 
-        orbitX=1;
-        orbitY=1;
-        lerpTime=2; 
-    /*
-        const oldTargetPosition = controls.target.clone();
-        targetLookPos.x+=50; 
-        targetLookPos.z+=20;
-        const dPosition = oldTargetPosition.sub(controls.target);
-        camera.position.sub(dPosition);*/
-    }
     console.log(curPos)
     console.log(camera.position)
+    }
 }
 
 document.getElementById("leftArrow").onclick = leftArrClick;

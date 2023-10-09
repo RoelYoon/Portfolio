@@ -68,6 +68,7 @@ function leftArrClick(){
     if(curPos!=0){
         curPos--; 
     }
+    console.log("here");
 }
 function rightArrClick(){
     if(curPos!=cameraPositions.length-1){

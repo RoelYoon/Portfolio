@@ -65,6 +65,7 @@ let curPos = 0;
 const targetCameraPos = new THREE.Vector3( 0, 0, 30 );
 const targetOrbitPos = new THREE.Vector3( 0, 0, 0 );
 const moveX=25; const moveZ=40;
+let lerpFrames = 0;
 function leftArrClick(){
     if(curPos!=0){
         curPos--;
@@ -72,9 +73,8 @@ function leftArrClick(){
         targetCameraPos.z-=moveZ; 
         targetOrbitPos.x-=moveX; 
         targetOrbitPos.z-=moveZ;
+        lerpFrames=10000;
     }
-    console.log(curPos)
-    console.log(camera.position)
 }
 function rightArrClick(){
     if(curPos!=1){
@@ -83,8 +83,7 @@ function rightArrClick(){
         targetCameraPos.z+=moveZ;
         targetOrbitPos.x+=moveX;
         targetOrbitPos.z+=moveZ; 
-    console.log(curPos)
-    console.log(camera.position)
+        lerpFrames=10000;
     }
 }
 
@@ -114,8 +113,11 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 });
 
 const loop = ()=>{
+    if(lerpFrames>0){
     camera.position.lerp(targetCameraPos,0.1);
     controls.target.lerp(targetOrbitPos,0.1);
+    lerpFrames--;
+    }
     controls.update(); 
     renderer.render(scene,camera); 
     window.requestAnimationFrame(loop); 

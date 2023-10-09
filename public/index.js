@@ -64,7 +64,7 @@ scene.add( rightArrow );*/
 let curPos = 0; 
 const targetCameraPos = new THREE.Vector3( 0, 0, 30 );
 const targetOrbitPos = new THREE.Vector3( 0, 0, 0 );
-const moveX=25; const moveZ=40;
+const moveX=30; const moveZ=60;
 let lerpFrames = 0;
 function leftArrClick(){
     if(curPos!=0){

@@ -25,6 +25,7 @@ body,html{
     transform: scale(0.2);
     position:absolute;
     left:-200px;
+    
 }
 #rightArrow{
     transform: scale(0.2);

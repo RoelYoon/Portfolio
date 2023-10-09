@@ -35,8 +35,8 @@ renderer.render(scene,camera);
 
 const controls = new OrbitControls(camera,canvas);
 controls.enableDamping=true;
-controls.enablePan = true;
-controls.enableZoom = true; 
+controls.enablePan = false;
+controls.enableZoom = false; 
 
 //skybox
 const skyBoxInd = 1; //for randomization later when more skyboxes
@@ -61,11 +61,18 @@ scene.add( leftArrow );
 scene.add( rightArrow );*/
 
 //functions
+let curPos = 0; 
+const cameraPositions = [new THREE.Vector3( 0, 10, 10 ),new THREE.Vector3( 20, 10, 10 )];
+
 function leftArrClick(){
-    console.log("left");
+    if(curPos!=0){
+    curPos--; 
+    }
 }
 function rightArrClick(){
-    console.log("right");
+    if(curPos!=cameraPositions.length-1){
+    curPos++;
+    }
 }
 document.getElementById("leftArrow").addEventListener("onclick",leftArrClick());
 document.getElementById("rightArrow").addEventListener("onclick",rightArrClick());
@@ -95,6 +102,7 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 const loop = ()=>{
     controls.update(); 
     renderer.render(scene,camera); 
+    camera.position = cameraPositions[curPos];
     window.requestAnimationFrame(loop); 
 }
 

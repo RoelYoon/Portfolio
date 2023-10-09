@@ -28,7 +28,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
     gltf.scene.scale.set(5,5,5);
     gltf.scene.rotateX(Math.PI/3);
 
-    models.push(gltf.scene)
+    models.push(gltf.scene);
     modelRotation.push(new THREE.Vector3(0,0,0));
     modelSetRotation.push(gltf.scene.rotation.copy());
     scene.add( gltf.scene );
@@ -136,18 +136,18 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 
 const loop = ()=>{
     if(lerpFrames>0){
-    camera.position.lerp(targetCameraPos,0.1);
-    controls.target.lerp(targetOrbitPos,0.1);
-    lerpFrames--;
-    console.log(lerpFrames);
-    }
-    if(camera.position==controls.target){
-        controls.target.x+=modelRotation[i].x;
-        controls.target.y+=modelRotation[i].y;
-        controls.target.z+=modelRotation[i].z;
+        camera.position.lerp(targetCameraPos,0.1);
+        controls.target.lerp(targetOrbitPos,0.1);
+        lerpFrames--;
+        console.log(lerpFrames);
+        if(camera.position==controls.target){
+            controls.target.z+=-0.01;
+        }
     }
     for(let i = 0; i < models.length; i++){
-        models[i].rotation.x+=models; 
+        models[i].rotation.x+=modelRotation[i].x; 
+        models[i].rotation.y+=modelRotation[i].y; 
+        models[i].rotation.z+=modelRotation[i].z; 
     }
     controls.update(); 
     renderer.render(scene,camera); 

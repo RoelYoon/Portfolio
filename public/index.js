@@ -148,9 +148,9 @@ const loop = ()=>{
     }
     for(let i = 0; i < models.length; i++){
         if(curPos!=i || modelSpin[i]){
-            models[i].rotation.x+=1; 
-            models[i].rotation.y+=1; 
-            models[i].rotation.z+=1; 
+            models[i].rotation.x+=0.01; 
+            models[i].rotation.y+=0.01; 
+            models[i].rotation.z+=0.01; 
         }
     }
     controls.update(); 

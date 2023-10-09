@@ -21,7 +21,7 @@ scene.add(mesh); */
 let models = [];
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
-	gltf.scene.scale.set(2,2,2);
+	gltf.scene.scale.set(5,5,5);
     gltf.scene.rotateX(Math.PI/2);
     models.push(gltf.scene)
     scene.add( gltf.scene );
@@ -31,7 +31,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 
 //light
 const light = new THREE.PointLight(0xffffff,500);
-light.position.set(0,10,10); 
+light.position.set(0,0,0); 
 const amblight = new THREE.AmbientLight(0xffffff);
 scene.add(light,amblight); 
 

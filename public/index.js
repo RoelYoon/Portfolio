@@ -62,11 +62,11 @@ scene.add( rightArrow );*/
 
 //functions
 let curPos = 0; 
-const cameraPositions = [new THREE.Vector3( 0, 0, 30 ),new THREE.Vector3( 100, 0, 30 )];
+const targetCameraPos = new THREE.Vector3( 0, 0, 30 );
 let posChange = false; 
 function leftArrClick(){
     if(curPos!=0){
-        curPos--; 
+        targetCameraPos.x-=100; 
         posChange=true;
     }
     console.log(curPos)
@@ -75,7 +75,7 @@ function leftArrClick(){
 }
 function rightArrClick(){
     if(curPos!=cameraPositions.length-1){
-        curPos++; 
+        targetCameraPos.x+=100;
         posChange=true;
     }
     console.log(curPos)
@@ -111,9 +111,10 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 const loop = ()=>{
     controls.update(); 
     if(posChange){
-        camera.position.x = cameraPositions[curPos].x;
-        camera.position.y = cameraPositions[curPos].y;
-        camera.position.z = cameraPositions[curPos].z;
+        camera.position.lerp(targetCameraPos,0.1);
+        //camera.position.x = cameraPositions[curPos].x;
+        //camera.position.y = cameraPositions[curPos].y;
+        //camera.position.z = cameraPositions[curPos].z;
         posChange=false;
     }
     renderer.render(scene,camera); 

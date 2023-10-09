@@ -24,12 +24,12 @@ body,html{
 #leftArrow{
     transform: scale(0.2);
     position:absolute;
-    left:-100px;
+    left:-500px;
 }
 #rightArrow{
     transform: scale(0.2);
     position: absolute;
-    right: -100px;
+    right: -500px;
 
 }
 .sprites{

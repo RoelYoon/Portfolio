@@ -48,9 +48,14 @@ panel.rotateZ(0.78);
 models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));
 anim.push(function(id){
-models[id].material.color.add(new THREE.Color(50000));console.log(models[id].material.color);
-}
-    );
+    if(models[id].material.color.equals(new THREE.Color('red'))){
+        models[id].material.color.lerp(new THREE.Color('green'),0.1);
+    }else if(models[id].material.color.equals(new THREE.Color('green'))){
+        models[id].material.color.lerp(new THREE.Color('blue'),0.1);
+    }else if(models[id].material.color.equals(new THREE.Color('blue'))){
+        models[id].material.color.lerp(new THREE.Color('red'),0.1);
+    }
+});
 scene.add( panel );
 
 

@@ -140,11 +140,11 @@ const loop = ()=>{
     controls.target.lerp(targetOrbitPos,0.1);
     lerpFrames--;
     console.log(lerpFrames);
+    }
     if(camera.position==controls.target){
         controls.target.x+=modelRotation[i].x;
         controls.target.y+=modelRotation[i].y;
         controls.target.z+=modelRotation[i].z;
-    }
     }
     for(let i = 0; i < models.length; i++){
         models[i].rotation.x+=models; 

@@ -18,9 +18,11 @@ const mesh = new THREE.Mesh(geometry,material);
 scene.add(mesh); */
 
 //load objects
+let models = [];
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
-	gltf.rotateY(Math.PI/2);
+	gltf.scene.rotateY(Math.PI/2);
+    models.push(gltf.scene)
     scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );

@@ -52,9 +52,21 @@ scene.background = new THREE.CubeTextureLoader()
         ] );
 
 //sprite 
-const SpriteMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Black_Right_Arrow.png/640px-Black_Right_Arrow.png' ) } );
-const sprite = new THREE.Sprite( SpriteMaterial );
-scene.add( sprite );
+/*
+const RASpriteMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Sprites/rightArrow.png' ) } );
+const LASpriteMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Sprites/leftArrow.png' ) } );
+const rightArrow = new THREE.Sprite( RASpriteMaterial );
+const leftArrow = new THREE.Sprite( LASpriteMaterial );
+scene.add( leftArrow );
+scene.add( rightArrow );*/
+
+//functions
+function leftArrClick(){
+    console.log("left");
+}
+function rightArrClick(){
+    console.log("right");
+}
 
 window.addEventListener('resize', ()=>{
     sizes.width = window.innerWidth;
@@ -63,12 +75,6 @@ window.addEventListener('resize', ()=>{
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);
 })
-controls.keys={
-	LEFT: 'ArrowLeft', //left arrow
-	UP: 'ArrowUp', // up arrow
-	RIGHT: 'ArrowRight', // right arrow
-	BOTTOM: 'ArrowDown' // down arrow
-}
 
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();

@@ -1,5 +1,6 @@
 import * as THREE from "/three";
 import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
+import { GLTFLoader } from '/three/addons/loaders/GLTFLoader.js';
 const scene = new THREE.Scene(); 
 
 const sizes = {
@@ -7,13 +8,22 @@ const sizes = {
     height: window.innerHeight
 }
 //sphere object
+/*
 const geometry = new THREE.TorusGeometry( 5, 3, 16, 50 ); 
 const material = new THREE.MeshStandardMaterial({
     color: "#fac802",
     roughness: 0.5
 });
 const mesh = new THREE.Mesh(geometry,material); 
-scene.add(mesh); 
+scene.add(mesh); */
+
+//load objects
+const GLTFloader = new GLTFLoader();
+loader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
+	scene.add( gltf.scene );
+}, undefined, function ( error ) {
+	console.error( error );
+} );
 
 //light
 const light = new THREE.PointLight(0xffffff,500);

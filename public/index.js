@@ -21,6 +21,7 @@ scene.add(mesh); */
 let models = [];
 let modelRotation = [];
 let modelSetRotation = [];
+let anim = [];
 
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
@@ -32,6 +33,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
     models.push(gltf.scene);
     modelRotation.push(new THREE.Vector3(0,0,0));
     modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
+    anim.push(function(){});
     scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );
@@ -45,6 +47,7 @@ panel.position.set(0+moveX*id,0,0+moveZ*id);
 panel.rotateZ(0.78);
 models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));
+anim.push(function(panel){panel.color+=1});
 scene.add( panel );
 
 
@@ -161,6 +164,7 @@ const loop = ()=>{
         models[i].rotation.x+=modelRotation[i].x; 
         models[i].rotation.y+=modelRotation[i].y; 
         models[i].rotation.z+=modelRotation[i].z; 
+        anim[i]();
     }
     controls.update(); 
     renderer.render(scene,camera); 

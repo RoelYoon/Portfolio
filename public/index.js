@@ -67,7 +67,7 @@ let posChange = false;
 function leftArrClick(){
     if(curPos!=0){
         curPos--;
-        targetCameraPos.x-=100; 
+        targetCameraPos.x-=500; 
         posChange=true;
     }
     console.log(curPos)
@@ -77,7 +77,7 @@ function leftArrClick(){
 function rightArrClick(){
     if(curPos!=1){
         curPos++;
-        targetCameraPos.x+=100;
+        targetCameraPos.x+=500;
         posChange=true;
     }
     console.log(curPos)
@@ -113,7 +113,7 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 const loop = ()=>{
     controls.update(); 
     if(posChange){
-        camera.position.lerp(targetCameraPos,0.1);
+        camera.position.lerp(targetCameraPos,1);
         //camera.position.x = cameraPositions[curPos].x;
         //camera.position.y = cameraPositions[curPos].y;
         //camera.position.z = cameraPositions[curPos].z;

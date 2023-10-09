@@ -40,6 +40,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 } );
 
 let id = 1; 
+let panelColor = 2;
 const panelGeometry = new THREE.BoxGeometry( 5, 5, 1 ); 
 const panelMaterial = new THREE.MeshBasicMaterial( {color: 'red'} ); 
 const panel = new THREE.Mesh( panelGeometry, panelMaterial ); 
@@ -48,12 +49,21 @@ panel.rotateZ(0.78);
 models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));
 anim.push(function(id){
-    if(models[id].material.color.equals(new THREE.Color('red'))){
+    if(panelColor == 0){
         models[id].material.color.lerp(new THREE.Color('green'),0.1);
-    }else if(models[id].material.color.equals(new THREE.Color('green'))){
+        if(models[id].material.color.equals(new THREE.Color('green'))){
+        panelColor=1;
+        }
+    }else if(panelColor==1){
         models[id].material.color.lerp(new THREE.Color('blue'),0.1);
-    }else if(models[id].material.color.equals(new THREE.Color('blue'))){
+        if(models[id].material.color.equals(new THREE.Color('blue'))){
+            panelColor=2;
+        }
+    }else if(panelColor==2){
         models[id].material.color.lerp(new THREE.Color('red'),0.1);
+        if(models[id].material.color.equals(new THREE.Color('red'))){
+            panelColor=0;
+        }
     }
 });
 scene.add( panel );

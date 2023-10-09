@@ -66,6 +66,7 @@ const targetCameraPos = new THREE.Vector3( 0, 0, 30 );
 let posChange = false; 
 function leftArrClick(){
     if(curPos!=0){
+        curPos--;
         targetCameraPos.x-=100; 
         posChange=true;
     }
@@ -75,6 +76,7 @@ function leftArrClick(){
 }
 function rightArrClick(){
     if(curPos!=1){
+        curPos++;
         targetCameraPos.x+=100;
         posChange=true;
     }

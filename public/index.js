@@ -31,7 +31,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 
     models.push(gltf.scene)
     modelIDs.push(0);
-    modelSpin.push(true);
+    modelSpin.push(false);
     modelSetRotation.push(gltf.scene.rotation);
     scene.add( gltf.scene );
 }, undefined, function ( error ) {

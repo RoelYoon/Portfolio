@@ -47,7 +47,7 @@ panel.position.set(0+moveX*id,0,0+moveZ*id);
 panel.rotateZ(0.78);
 models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));
-anim.push(function(panel){panel.color+=1});
+anim.push(function(id){models[id].color+=1});
 scene.add( panel );
 
 
@@ -164,7 +164,7 @@ const loop = ()=>{
         models[i].rotation.x+=modelRotation[i].x; 
         models[i].rotation.y+=modelRotation[i].y; 
         models[i].rotation.z+=modelRotation[i].z; 
-        anim[i]();
+        anim[i](i);
     }
     controls.update(); 
     renderer.render(scene,camera); 

@@ -32,10 +32,10 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 } );
 
 //light
-const light = new THREE.PointLight(0xffffff,500);
-light.position.set(0,0,10); 
+const pLight = new THREE.PointLight(0xffffff,5000);
+pLight.position.set(0,0,10); 
 const amblight = new THREE.AmbientLight(0x404040,500);
-scene.add(amblight); 
+scene.add(pLight,amblight); 
 
 
 //camera

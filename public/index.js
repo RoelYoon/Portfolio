@@ -30,7 +30,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 
     models.push(gltf.scene);
     modelRotation.push(new THREE.Vector3(0,0,0));
-    modelSetRotation.push(new THREE.Vector3(gltf.rotation.x,gltf.rotation.y,gltf.rotation.z));
+    modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
     scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );

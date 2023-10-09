@@ -81,7 +81,7 @@ scene.add( pc1Title );
 const mainCode1Material = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
 const mainCode1 = new THREE.Sprite( mainCode1Material );
 mainCode1.position.set(moveX*id,-10,moveZ*id);
-mainCode1.scale.set(10*mainCode1.scale.x,10*mainCode1.scale.y,1);
+mainCode1.scale.set(10*mainCode1.scale.x,30*mainCode1.scale.y,1);
 scene.add( mainCode1 );
 
 

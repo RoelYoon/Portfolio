@@ -25,13 +25,11 @@ body,html{
     transform: scale(0,2);
     position:absolute;
     left:-200px;
-    top:50%;
 }
 #rightArrow{
     transform: scale(0,2);
     position: absolute;
     right: -200px;
-    top:50%;
 }
 .sprites{
     background-color:transparent; 

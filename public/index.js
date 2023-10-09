@@ -20,7 +20,8 @@ scene.add(mesh); */
 //load objects
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
-	scene.add( gltf.scene );
+	gltf.rotateY(Math.PI/2);
+    scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );
 } );
@@ -107,7 +108,7 @@ window.addEventListener('resize', ()=>{
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);
 })
-
+/*
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();
     camera.getWorldDirection( direction );
@@ -120,7 +121,7 @@ document.body.addEventListener('keypress',(keyEvent)=>{
             camera.position.lerp( direction.multiplyScalar(-m),0.1);
             break;
     }
-});
+});*/
 
 const loop = ()=>{
     if(lerpFrames>0){

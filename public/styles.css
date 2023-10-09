@@ -26,14 +26,14 @@ body,html{
     left:-200px;
     top:50%;
     -ms-transform: translateY(-50%);
-    transform: scale(0,2),translateY(-50%);
+    transform: scale(0,2) translateY(-50%);
 }
 #rightArrow{
     position: absolute;
     right: -200px;
     top:50%;
     -ms-transform: translateY(-50%);
-    transform: scale(0,2),translateY(-50%);
+    transform: scale(0,2) translateY(-50%);
 }
 .sprites{
     background-color:transparent; 

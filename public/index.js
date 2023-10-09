@@ -41,7 +41,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 
 let id = 1; 
 let panelColor = 2;
-let panelChange = 10;
+let panelChange = 30;
 const panelGeometry = new THREE.BoxGeometry( 5, 5, 1 ); 
 const panelMaterial = new THREE.MeshBasicMaterial( {color: 'red'} ); 
 const panel = new THREE.Mesh( panelGeometry, panelMaterial ); 
@@ -59,7 +59,7 @@ anim.push(function(id){
     }
     if(panelChange<=0){
         panelColor=(panelColor+1)%3;
-        panelChange=10;
+        panelChange=30;
     }else{
         panelChange--;
     }

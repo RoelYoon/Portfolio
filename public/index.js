@@ -111,7 +111,9 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 const loop = ()=>{
     controls.update(); 
     if(posChange){
-        camera.position.set(cameraPositions[curPos]);
+        camera.position.x = cameraPositions[curPos].x;
+        camera.position.y = cameraPositions[curPos].y;
+        camera.position.z = cameraPositions[curPos].z;
         posChange=false;
     }
     renderer.render(scene,camera); 

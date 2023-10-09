@@ -37,11 +37,11 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 } );
 
 //light
-const pLight = new THREE.PointLight(0xffffff,100000);
-pLight.position.set(0,0,-4); 
+const titleBackPLight = new THREE.PointLight(0xffffff,100000);
+titleBackPLight.position.set(0,-2,-4); 
 const hLight = new THREE.HemisphereLight( 0xffffff, 0x080820, 50000);
 const amblight = new THREE.AmbientLight(0x404040,500);
-scene.add(pLight,amblight); 
+scene.add(titleBackPLight,amblight); 
 
 
 //camera

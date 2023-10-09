@@ -68,7 +68,7 @@ function leftArrClick(){
     if(curPos!=0){
         curPos--;
         targetCameraPos.x-=300; 
-        targetCameraPos.z+=100; 
+        targetCameraPos.z-=200; 
         posChange=true;
     }
     console.log(curPos)
@@ -79,7 +79,7 @@ function rightArrClick(){
     if(curPos!=1){
         curPos++;
         targetCameraPos.x+=300;
-        targetCameraPos.z-=100;
+        targetCameraPos.z+=200;
         posChange=true;
     }
     console.log(curPos)

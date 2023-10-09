@@ -33,7 +33,7 @@ const renderer = new THREE.WebGLRenderer({ canvas });
 renderer.setSize(sizes.width,sizes.height); 
 renderer.render(scene,camera); 
 
-const controls = new FirstPersonControls(camera);
+const controls = new FirstPersonControls(camera,canvas);
 controls.enableDamping=true;
 controls.enablePan = true;
 controls.enableZoom = true; 

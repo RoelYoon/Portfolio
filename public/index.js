@@ -23,6 +23,7 @@ let modelRotation = [];
 let modelSetRotation = [];
 let anim = [];
 
+//title
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
 	gltf.scene.position.x-=9;
@@ -39,13 +40,14 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 	console.error( error );
 } );
 
+//color-changing panel
 let id = 1; 
 let panelColor = 2;
 let panelChange = 50;
 const panelGeometry = new THREE.BoxGeometry( 5, 5, 1 ); 
 const panelMaterial = new THREE.MeshBasicMaterial( {color: 'red'} ); 
 const panel = new THREE.Mesh( panelGeometry, panelMaterial ); 
-panel.position.set(0+moveX*id,0,0+moveZ*id);
+panel.position.set(0+moveX*id-5,5,0+moveZ*id);
 panel.rotateZ(0.78);
 models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));
@@ -65,6 +67,11 @@ anim.push(function(id){
     }
 });
 scene.add( panel );
+
+//programming challenge 1 title
+const mainCode1 = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
+mainCode1.position.set(moveX*id,0,moveZ*id);
+scene.add( mainCode1 );
 
 
 //light

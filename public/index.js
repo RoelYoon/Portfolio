@@ -21,7 +21,7 @@ scene.add(mesh); */
 let models = [];
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
-	gltf.scene.position.x-=10;
+	gltf.scene.position.x-=9;
     gltf.scene.position.y+=4;
     gltf.scene.scale.set(5,5,5);
     gltf.scene.rotateX(Math.PI/2);

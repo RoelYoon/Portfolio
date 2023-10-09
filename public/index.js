@@ -102,7 +102,7 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 const loop = ()=>{
     controls.update(); 
     renderer.render(scene,camera); 
-    camera.position = cameraPositions[curPos];
+    camera.position.set(cameraPositions[curPos]);
     window.requestAnimationFrame(loop); 
 }
 

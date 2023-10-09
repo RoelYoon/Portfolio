@@ -1,5 +1,6 @@
 import * as THREE from "/three";
 import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
+import { FirstPersonControls } from '/three/addons/controls/FirstPersonControls.js';
 const scene = new THREE.Scene(); 
 
 const sizes = {
@@ -32,12 +33,10 @@ const renderer = new THREE.WebGLRenderer({ canvas });
 renderer.setSize(sizes.width,sizes.height); 
 renderer.render(scene,camera); 
 
-const controls = new OrbitControls(camera,canvas);
+const controls = new FirstPersonControls(camera,canvas);
 controls.enableDamping=true;
 controls.enablePan = true;
 controls.enableZoom = true; 
-
-controls.target.set(camera.position.x,camera.position.y,camera.position.z);
 
 //skybox
 const skyBoxInd = 1; //for randomization later when more skyboxes

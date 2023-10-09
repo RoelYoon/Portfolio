@@ -34,9 +34,9 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 //light
 const pLight = new THREE.PointLight(0xffffff,5000);
 pLight.position.set(0,0,10); 
-const light = new THREE.HemisphereLight( 0xffffbb, 0x080820, 100);
+const hLight = new THREE.HemisphereLight( 0xffffff, 0x080820, 5000);
 const amblight = new THREE.AmbientLight(0x404040,500);
-scene.add(light,amblight); 
+scene.add(hLight,amblight); 
 
 
 //camera

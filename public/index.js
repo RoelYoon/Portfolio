@@ -149,6 +149,8 @@ const loop = ()=>{
     for(let i = 0; i < models.length; i++){
         if(curPos!=i || modelSpin[i]){
             models[i].rotation.z+=0.01; 
+        }else{
+            models[i].rotation=modelSetRotation[i];
         }
     }
     controls.update(); 

@@ -51,6 +51,11 @@ scene.background = new THREE.CubeTextureLoader()
             `nz${skyBoxInd}.png` //back
         ] );
 
+//sprite 
+const SpriteMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Black_Right_Arrow.png/640px-Black_Right_Arrow.png' ) } );
+const sprite = new THREE.Sprite( SpriteMaterial );
+scene.add( sprite );
+
 window.addEventListener('resize', ()=>{
     sizes.width = window.innerWidth;
     sizes.height = window.innerHeight;

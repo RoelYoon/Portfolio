@@ -37,6 +37,8 @@ controls.enableDamping=true;
 controls.enablePan = true;
 controls.enableZoom = true; 
 
+controls.target.set(camera.position);
+
 //skybox
 const skyBoxInd = 1; //for randomization later when more skyboxes
 scene.background = new THREE.CubeTextureLoader()

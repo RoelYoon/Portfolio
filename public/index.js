@@ -47,7 +47,13 @@ panel.position.set(0+moveX*id,0,0+moveZ*id);
 panel.rotateZ(0.78);
 models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));
-anim.push(function(id){models[id].material.color+=1;});
+anim.push(function(id){
+    if(models[id].material.color==0xFFFFFF){
+        models[id].material.color=0x000000;
+    }else{
+        models[id].material.color+=5;}
+    }
+    );
 scene.add( panel );
 
 

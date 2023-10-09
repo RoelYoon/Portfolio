@@ -64,12 +64,19 @@ scene.add( rightArrow );*/
 let curPos = 0; 
 const cameraPositions = [new THREE.Vector3( 0, 10, 10 ),new THREE.Vector3( 20, 10, 10 )];
 
-document.getElementById("leftArrow").onclick = ()=>{    if(curPos!=0){
-    curPos--; 
-}};
-document.getElementById("rightArrow").onclick = ()=>{    if(curPos!=cameraPositions.length-1){
-    curPos++;
-}};
+function leftArrClick(){
+    if(curPos!=0){
+        curPos--; 
+    }
+}
+function rightArrClick(){
+    if(curPos!=cameraPositions.length-1){
+        curPos++; 
+    }
+}
+
+document.getElementById("leftArrow").onclick = leftArrClick;
+document.getElementById("rightArrow").onclick = rightArrClick;
 
 window.addEventListener('resize', ()=>{
     sizes.width = window.innerWidth;

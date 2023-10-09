@@ -118,10 +118,6 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 });
 
 const loop = ()=>{
-    const oldTargetPosition = controls.target.clone();
-    controls.target = someNewTarget;
-    const dPosition = oldTargetPosition.sub(controls.target);
-    camera.position.sub(dPosition);
     camera.position.lerp(targetCameraPos,0.1);
     controls.update(); 
     renderer.render(scene,camera); 

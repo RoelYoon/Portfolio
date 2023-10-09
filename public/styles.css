@@ -23,14 +23,14 @@ body,html{
 }
 #leftArrow{
     position:absolute;
-    left:-200px;
+    //left:-200px;
     top:50%;
     -ms-transform: translateY(-50%);
     transform: scale(0,2) translateY(-50%);
 }
 #rightArrow{
     position: absolute;
-    right: -200px;
+    //right: -200px;
     top:50%;
     -ms-transform: translateY(-50%);
     transform: scale(0,2) translateY(-50%);

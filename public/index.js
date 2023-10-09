@@ -73,7 +73,7 @@ function leftArrClick(){
         targetCameraPos.z-=moveZ; 
         targetOrbitPos.x-=moveX; 
         targetOrbitPos.z-=moveZ;
-        lerpFrames=10000;
+        lerpFrames=50;
     }
 }
 function rightArrClick(){
@@ -83,7 +83,7 @@ function rightArrClick(){
         targetCameraPos.z+=moveZ;
         targetOrbitPos.x+=moveX;
         targetOrbitPos.z+=moveZ; 
-        lerpFrames=10000;
+        lerpFrames=50;
     }
 }
 

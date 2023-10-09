@@ -41,7 +41,7 @@ let id = 1;
 const panelGeometry = new THREE.BoxGeometry( 5, 5, 2 ); 
 const panelMaterial = new THREE.MeshBasicMaterial( {color: 0x00ff00} ); 
 const panel = new THREE.Mesh( panelGeometry, panelMaterial ); 
-panel.position.set(0+moveX*i,0,0+moveZ*i);
+panel.position.set(0+moveX*id,0,0+moveZ*id);
 models.push(panel);
 modelRotation.push(new THREE.Vector3(1,1,1));
 scene.add( panel );

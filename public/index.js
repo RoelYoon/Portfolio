@@ -42,7 +42,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 
 //color-changing panel
 let id = 1; 
-let panelColor = 2;
+let panelColor = 0;
 let panelChange = 50;
 const panelGeometry = new THREE.BoxGeometry( 5, 5, 1 ); 
 const panelMaterial = new THREE.MeshBasicMaterial( {color: 'red'} ); 
@@ -53,14 +53,16 @@ models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));
 anim.push(function(id){
     if(panelColor == 0){
-        models[id].material.color.lerp(new THREE.Color('green'),0.15);
-    }else if(panelColor==1){
-        models[id].material.color.lerp(new THREE.Color('blue'),0.15);
-    }else if(panelColor==2){
         models[id].material.color.lerp(new THREE.Color('red'),0.15);
+    }else if(panelColor==1){
+        models[id].material.color.lerp(new THREE.Color('green'),0.15);
+    }else if(panelColor==2){
+        models[id].material.color.lerp(new THREE.Color('blue'),0.15);
+    }else if(panelColor==3){
+        models[id].material.color.lerp(new THREE.Color('green'),0.15);
     }
     if(panelChange<=0){
-        panelColor=(panelColor+1)%3;
+        panelColor=(panelColor+1)%4;
         panelChange=50;
     }else{
         panelChange--;
@@ -69,6 +71,7 @@ anim.push(function(id){
 scene.add( panel );
 
 //programming challenge 1 title
+textureLoader.output
 const mainCode1Material = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
 const mainCode1 = new THREE.Sprite( mainCode1Material );
 mainCode1.position.set(moveX*id,0,moveZ*id);

@@ -130,12 +130,7 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 
 const loop = ()=>{
     camera.position.lerp(targetCameraPos,0.1);
-    if(lerpTime>0){
-
-        controls.target.x+=orbitX; 
-        controls.target.x+=orbitY; 
-        lerpTime-=clock.getDelta();
-    }
+    controls.target.lerp(targetOrbitPos,0.1);
     controls.update(); 
     renderer.render(scene,camera); 
     window.requestAnimationFrame(loop); 

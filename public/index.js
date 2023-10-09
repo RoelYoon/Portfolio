@@ -51,11 +51,11 @@ models.push(panel);
 modelRotation.push(new THREE.Vector3(0,0.01,0));
 anim.push(function(id){
     if(panelColor == 0){
-        models[id].material.color.lerp(new THREE.Color('green'),0.5);
+        models[id].material.color.lerp(new THREE.Color('green'),0.2);
     }else if(panelColor==1){
-        models[id].material.color.lerp(new THREE.Color('blue'),0.5);
+        models[id].material.color.lerp(new THREE.Color('blue'),0.2);
     }else if(panelColor==2){
-        models[id].material.color.lerp(new THREE.Color('red'),0.5);
+        models[id].material.color.lerp(new THREE.Color('red'),0.2);
     }
     if(panelChange<=0){
         panelColor=(panelColor+1)%3;

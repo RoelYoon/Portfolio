@@ -24,7 +24,7 @@ scene.add(light,amblight);
 
 
 //camera
-const camera = new THREE.PerspectiveCamera(45, sizes.width/sizes.height);
+const camera = new THREE.PerspectiveCamera(45, sizes.width/sizes.height,0.1,10000);
 camera.position.z = 30; 
 scene.add(camera); 
 

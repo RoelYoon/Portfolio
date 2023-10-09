@@ -131,8 +131,9 @@ document.body.addEventListener('keypress',(keyEvent)=>{
 const loop = ()=>{
     camera.position.lerp(targetCameraPos,0.1);
     if(lerpTime>0){
-        targetOrbitPos.target.x+=orbitX; 
-        targetOrbitPos.target.x+=orbitY; 
+
+        controls.target.x+=orbitX; 
+        controls.target.x+=orbitY; 
         lerpTime-=clock.getDelta();
     }
     controls.update(); 

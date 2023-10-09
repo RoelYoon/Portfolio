@@ -1,6 +1,5 @@
 import * as THREE from "/three";
 import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
-import { FirstPersonControls } from '/three/examples/jsm/controls/FirstPersonControls.js';
 const scene = new THREE.Scene(); 
 
 const sizes = {

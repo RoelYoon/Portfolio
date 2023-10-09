@@ -41,7 +41,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 
 let id = 1; 
 const panelGeometry = new THREE.BoxGeometry( 5, 5, 2 ); 
-const panelMaterial = new THREE.MeshBasicMaterial( {color: 0xFFFFFF} ); 
+const panelMaterial = new THREE.MeshBasicMaterial( {color: 0x000000} ); 
 const panel = new THREE.Mesh( panelGeometry, panelMaterial ); 
 panel.position.set(0+moveX*id,0,0+moveZ*id);
 panel.rotateZ(0.78);

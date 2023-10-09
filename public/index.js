@@ -2,7 +2,7 @@ import * as THREE from "/three";
 import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
 const scene = new THREE.Scene(); 
-
+const moveX=30; const moveZ=60;
 const sizes = {
     width: window.innerWidth,
     height: window.innerHeight
@@ -21,6 +21,7 @@ scene.add(mesh); */
 let models = [];
 let modelRotation = [];
 let modelSetRotation = [];
+
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
 	gltf.scene.position.x-=9;
@@ -35,6 +36,16 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 }, undefined, function ( error ) {
 	console.error( error );
 } );
+
+let id = 1; 
+const panelGeometry = new THREE.BoxGeometry( 5, 5, 2 ); 
+const panelMaterial = new THREE.MeshBasicMaterial( {color: 0x00ff00} ); 
+const panel = new THREE.Mesh( panelGeometry, panelMaterial ); 
+panel.position.set(0+moveX*i,0,0+moveZ*i);
+models.push(panel);
+modelRotation.push(new THREE.Vector3(1,1,1));
+scene.add( panel );
+
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);
@@ -88,7 +99,6 @@ scene.add( rightArrow );*/
 let curPos = 0; 
 const targetCameraPos = new THREE.Vector3( 0, 0, 30 );
 const targetOrbitPos = new THREE.Vector3( 0, 0, 29.99 );
-const moveX=30; const moveZ=60;
 let lerpFrames = 0;
 function leftArrClick(){
     if(curPos!=0){

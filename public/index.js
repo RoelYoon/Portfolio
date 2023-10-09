@@ -45,7 +45,7 @@ panel.position.set(0+moveX*id,0,0+moveZ*id);
 panel.rotateX(0.78);
 panel.rotateZ(0.78);
 models.push(panel);
-modelRotation.push(new THREE.Vector3(0,0.01,0));
+modelRotation.push(new THREE.Vector3(0.1,0.01,0));
 scene.add( panel );
 
 

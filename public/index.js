@@ -19,13 +19,20 @@ scene.add(mesh); */
 
 //load objects
 let models = [];
+let modelIDs = [];
+let modelSpin = []; 
+let modelSetRotation = [];
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
 	gltf.scene.position.x-=9;
     gltf.scene.position.y+=4;
     gltf.scene.scale.set(5,5,5);
     gltf.scene.rotateX(Math.PI/3);
+
     models.push(gltf.scene)
+    modelIDs.push(0);
+    modelSpin.push(true);
+    modelSetRotation.push(gltf.scene.rotation);
     scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );
@@ -138,6 +145,13 @@ const loop = ()=>{
     if(camera.position==controls.target){
         controls.target.z+=-0.01;
     }
+    }
+    for(let i = 0; i < models.length; i++){
+        if(curPos!=i || modelSpin[i]){
+            models[i].rotation.x+=1; 
+            models[i].rotation.y+=1; 
+            models[i].rotation.z+=1; 
+        }
     }
     controls.update(); 
     renderer.render(scene,camera); 

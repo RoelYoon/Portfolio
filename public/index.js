@@ -24,7 +24,7 @@ scene.add(light,amblight);
 
 
 //camera
-const camera = new THREE.PerspectiveCamera(45, sizes.width/sizes.height,0.1,10000);
+const camera = new THREE.PerspectiveCamera(45, sizes.width/sizes.height);
 camera.position.z = 30; 
 scene.add(camera); 
 
@@ -33,7 +33,7 @@ const renderer = new THREE.WebGLRenderer({ canvas });
 renderer.setSize(sizes.width,sizes.height); 
 renderer.render(scene,camera); 
 
-const controls = new FirstPersonControls(camera);
+const controls = new FirstPersonControls(camera,canvas);
 controls.enableDamping=true;
 controls.enablePan = true;
 controls.enableZoom = true; 

@@ -74,14 +74,14 @@ scene.add( panel );
 const pc1TitleMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png' ) } );
 const pc1Title = new THREE.Sprite( pc1TitleMaterial );
 pc1Title.position.set(moveX*id,0,moveZ*id);
-pc1Title.scale.set(10*pc1Title.scale.x,10*pc1Title.scale.y,1);
+pc1Title.scale.set(30*pc1Title.scale.x,10*pc1Title.scale.y,1);
 scene.add( pc1Title );
 
 //maincode sprite
 const mainCode1Material = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
 const mainCode1 = new THREE.Sprite( mainCode1Material );
 mainCode1.position.set(moveX*id,-10,moveZ*id);
-mainCode1.scale.set(10*mainCode1.scale.x,30*mainCode1.scale.y,1);
+mainCode1.scale.set(10*mainCode1.scale.x,10*mainCode1.scale.y,1);
 scene.add( mainCode1 );
 
 

@@ -64,7 +64,7 @@ scene.add( rightArrow );*/
 //functions
 let curPos = 0; 
 const targetCameraPos = new THREE.Vector3( 0, 0, 30 );
-const targetOrbitPos = new THREE.Vector3( 0, 0, 30 );
+const targetOrbitPos = new THREE.Vector3( 0, 0, 29.99 );
 const moveX=30; const moveZ=60;
 let lerpFrames = 0;
 function leftArrClick(){
@@ -119,6 +119,9 @@ const loop = ()=>{
     controls.target.lerp(targetOrbitPos,0.1);
     lerpFrames--;
     console.log(lerpFrames);
+    if(camera.position==controls.target){
+        controls.target.z+=-0.01;
+    }
     }
     controls.update(); 
     renderer.render(scene,camera); 

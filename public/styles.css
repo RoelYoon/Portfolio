@@ -2,6 +2,7 @@ body > *{
     position: relative;
     z-index: 2;
     color: white;
+    overscroll-behavior: none;
 }
 h1{
     text-align: center;

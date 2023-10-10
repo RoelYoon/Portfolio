@@ -219,10 +219,11 @@ window.addEventListener('resize', ()=>{
     renderer.setSize(sizes.width,sizes.height);
 })
   window.addEventListener("wheel", function(e) {
-    if(!sceneYLock[curScene] && (targetCameraPos.y<50 && targetCameraPos.y>-50)){
-        var isTouchPad = e.wheelDeltaY ? e.wheelDeltaY === -3 * e.deltaY : e.deltaMode === 0
-        targetCameraPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/(isTouchPad?10:5); 
-        targetOrbitPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/(isTouchPad?10:5);
+    if(!sceneYLock[curScene]){
+        let isTouchPad = e.wheelDeltaY ? e.wheelDeltaY === -3 * e.deltaY : e.deltaMode === 0
+        let d = isTouchPad?(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/10:e.wheelDeltaY; 
+        targetCameraPos.y-=d; 
+        targetOrbitPos.y-=d;
         lerpFrames=5;
     }
     // code to increment object.position.z 

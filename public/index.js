@@ -155,7 +155,7 @@ addSprite(483,55,1/18,id,0,-73,0,'https://roelyoon.github.io/Portfolio/Images/Un
 addSprite(476,75,1/18,id,0,-77,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s4.png');
 
 //subtitle 2
-addSprite(476,96,1/20,id,0,-83,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/build.png');
+addSprite(476,96,1/20,id,0,-81,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/build.png');
 
 
 //light

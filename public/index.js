@@ -97,8 +97,8 @@ scene.add( panel );
 
 //youtube logo
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', function ( gltf ) {
-	gltf.scene.position.x=moveX*id;
-    gltf.scene.position.z=moveZ*id;
+	gltf.scene.position.x=moveX;
+    gltf.scene.position.z=moveZ;
     gltf.scene.position.x+=5;
     gltf.scene.position.y-=17;
     gltf.scene.scale.set(1/30,1/30,1/30);
@@ -127,7 +127,7 @@ addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenge
 
 //scene 2
 sceneYLock.push(false);
-id++; 
+id++;
 
 //title
 

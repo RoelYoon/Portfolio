@@ -223,7 +223,7 @@ window.addEventListener('resize', ()=>{
         var isTouchPad = e.wheelDeltaY ? e.wheelDeltaY === -3 * e.deltaY : e.deltaMode === 0
         targetCameraPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/(isTouchPad?10:5); 
         targetOrbitPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/(isTouchPad?10:5);
-        lerpFrames=2;
+        lerpFrames=5;
     }
     // code to increment object.position.z 
   }, true);

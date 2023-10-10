@@ -134,16 +134,16 @@ addSprite(482,84,1/23,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit
 addSprite(483,69,1/18,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/goal.png');
 
 //s1
-addSprite(483,90,1/18,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s1.png');
+addSprite(483,90,1/18,id,0,-9,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s1.png');
 
 //design blueprint 1
 addSprite(483,355,1/15,id,0,-25,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype1.jpeg');
 
 //s2
-addSprite(483,41,1/18,id,0,-50,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s2.png');
+addSprite(483,41,1/18,id,0,-40,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s2.png');
 
 
-addSprite(483,355,1/15,id,0,-65,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype2.jpeg');
+addSprite(483,355,1/15,id,0,-50,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype2.jpeg');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

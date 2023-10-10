@@ -146,17 +146,9 @@ camera.position.z = 30;
 scene.add(camera); 
 
 const canvas  = document.querySelector(".webgl");
-console.log(window.devicePixelRatio);
-canvas.width = sizes.width;
-canvas.height = sizes.height;
-/*
-let size = 200
-canvas.style.width = `${size}px`;
-canvas.style.height = `${size}px`;
-canvas.width = Math.floor(size * window.devicePixelRatio);
-canvas.height =  Math.floor(size * window.devicePixelRatio);*/
 const renderer = new THREE.WebGLRenderer({ canvas }); 
 renderer.setSize(sizes.width,sizes.height); 
+renderer.setPixelRatio(window.devicePixelRatio);
 renderer.render(scene,camera); 
 
 const controls = new OrbitControls(camera,canvas);
@@ -220,12 +212,11 @@ document.getElementById("leftArrow").onclick = leftArrClick;
 document.getElementById("rightArrow").onclick = rightArrClick;
 
 window.addEventListener('resize', ()=>{
-    sizes.width = window.innerWidth //window.innerWidth;
-    sizes.height = window.innerHeight //window.innerHeight;
+    sizes.width = window.innerWidth;
+    sizes.height = window.innerHeight;
     camera.aspect = sizes.width/sizes.height;
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);
-    renderer.canvas.setSize(sizes.width * window.devicePixelRatio,sizes.height * window.devicePixelRatio);
 })
   window.addEventListener("wheel", function(e) {
     if(!sceneYLock[curScene] && (targetCameraPos.y<200 && targetCameraPos.y>-200)){

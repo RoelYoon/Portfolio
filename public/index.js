@@ -146,6 +146,8 @@ camera.position.z = 30;
 scene.add(camera); 
 
 const canvas  = document.querySelector(".webgl");
+canvas.styles.width = `${sizes.width}px`;
+canvas.styles.height = `${sizes.height}px`;
 const renderer = new THREE.WebGLRenderer({ canvas }); 
 renderer.setSize(sizes.width,sizes.height); 
 renderer.render(scene,camera); 
@@ -211,8 +213,8 @@ document.getElementById("leftArrow").onclick = leftArrClick;
 document.getElementById("rightArrow").onclick = rightArrClick;
 
 window.addEventListener('resize', ()=>{
-    sizes.width = window.innerWidth;
-    sizes.height = window.innerHeight;
+    sizes.width = Math.floor(window.innerWidth * window.devicePixelRatio)//window.innerWidth;
+    sizes.height = Math.floor(window.innerHeight * window.devicePixelRatio)//window.innerHeight;
     camera.aspect = sizes.width/sizes.height;
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);

@@ -70,23 +70,24 @@ anim.push(function(id){
 });
 scene.add( panel );
 
+//programming challenge 1 title
 let ratioWidth = 1238;
 let ratioHeight = 194; 
-let scaleFactor = 1/59;
-
-//programming challenge 1 title
+let scaleFactor = 1/60;
 const pc1TitleMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png' ) } );
 const pc1Title = new THREE.Sprite( pc1TitleMaterial );
 pc1Title.position.set(moveX*id,0,moveZ*id);
-
 pc1Title.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
 scene.add( pc1Title );
 
 //maincode sprite
+ratioWidth = 377
+ratioHeight = 662
+scaleFactor = 1/30
 const mainCode1Material = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
 const mainCode1 = new THREE.Sprite( mainCode1Material );
 mainCode1.position.set(moveX*id,-10,moveZ*id);
-mainCode1.scale.set(10*mainCode1.scale.x,10*mainCode1.scale.y,1);
+mainCode1.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
 scene.add( mainCode1 );
 
 
@@ -97,7 +98,7 @@ titleBackPLight.position.set(0,-2,-4);
 titleTopLight.position.set(0,10,4); 
 const hLight = new THREE.HemisphereLight( 0xffffff, 0x080820, 50000);
 const amblight = new THREE.AmbientLight(0xffffff,1);
-scene.add(titleBackPLight,titleTopLight); 
+scene.add(titleBackPLight,titleTopLight,amblight); 
 
 
 //camera

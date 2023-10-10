@@ -222,7 +222,7 @@ class InteractionData {
   }
 }
 
-export default InteractionData;
+
 
 /**
  * Event class that mimics native DOM events.
@@ -298,7 +298,7 @@ class InteractionEvent {
     }
   }
   
-  export default InteractionEvent;
+
   
 /**
  * DisplayObjects with the `trackedPointers` property use this class to track interactions
@@ -306,7 +306,7 @@ class InteractionEvent {
  * @class
  * @private
  */
-export default class InteractionTrackingData {
+class InteractionTrackingData {
     /**
      * @param {number} pointerId - Unique pointer id of the event
      */

@@ -158,7 +158,7 @@ addSprite(476,75,1/18,id,0,-77,0,'https://roelyoon.github.io/Portfolio/Images/Un
 addSprite(476,96,1/20,id,0,-81,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/build.png');
 
 //s5
-addSprite(476,60,1/32,id,-6,-84,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s5.png');
+addSprite(476,60,1/34,id,-6,-84,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s5.png');
 
 
 //light

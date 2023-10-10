@@ -217,8 +217,8 @@ document.getElementById("leftArrow").onclick = leftArrClick;
 document.getElementById("rightArrow").onclick = rightArrClick;
 
 window.addEventListener('resize', ()=>{
-    sizes.width = Math.floor(window.innerWidth * window.devicePixelRatio)//window.innerWidth;
-    sizes.height = Math.floor(window.innerHeight * window.devicePixelRatio)//window.innerHeight;
+    sizes.width = window.innerWidth //window.innerWidth;
+    sizes.height = window.innerHeight //window.innerHeight;
     camera.aspect = sizes.width/sizes.height;
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);

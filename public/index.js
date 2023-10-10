@@ -22,7 +22,11 @@ let models = [];
 let modelRotation = [];
 let modelSetRotation = [];
 let anim = [];
+let sceneYLock = [];
+let curScene = 0; 
 
+//scene 1
+sceneYLock.push(true); 
 //title
 const GLTFloader = new GLTFLoader();
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
@@ -70,6 +74,8 @@ anim.push(function(id){
 });
 scene.add( panel );
 
+//scene 2
+sceneYLock.push(false);
 //programming challenge 1 title
 let ratioWidth = 1238;
 let ratioHeight = 194; 
@@ -140,13 +146,12 @@ scene.add( leftArrow );
 scene.add( rightArrow );*/
 
 //functions
-let curPos = 0; 
 const targetCameraPos = new THREE.Vector3( 0, 0, 30 );
 const targetOrbitPos = new THREE.Vector3( 0, 0, 29.99 );
 let lerpFrames = 0;
 function leftArrClick(){
-    if(curPos!=0){
-        curPos--;
+    if(curScene!=0){
+        curScene--;
         targetCameraPos.x-=moveX; 
         targetCameraPos.y = 0; 
         targetCameraPos.z-=moveZ; 
@@ -157,8 +162,8 @@ function leftArrClick(){
     }
 }
 function rightArrClick(){
-    if(curPos!=1){
-        curPos++;
+    if(curScene!=1){
+        curScene++;
         targetCameraPos.x+=moveX;
         targetCameraPos.y = 0; 
         targetCameraPos.z+=moveZ;
@@ -180,7 +185,10 @@ window.addEventListener('resize', ()=>{
     renderer.setSize(sizes.width,sizes.height);
 })
   window.addEventListener("wheel", function(e) {
-    console.log(e.deltaY);
+    if(!sceneYLock[curScene]){
+        targetCameraPos.y+= Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY; 
+        targetOrbitPos.y+= Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY;
+    }
     // code to increment object.position.z 
   }, true);
 /*

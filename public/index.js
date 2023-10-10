@@ -77,8 +77,8 @@ scene.add( panel );
 //scene 2
 sceneYLock.push(false);
 //programming challenge 1 title
-let ratioWidth = 1238;
-let ratioHeight = 194; 
+let ratioWidth = 1248;
+let ratioHeight = 200; 
 let scaleFactor = 1/60;
 const pc1TitleTexture = new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png' ); 
 pc1TitleTexture.colorSpace = THREE.SRGBColorSpace; 

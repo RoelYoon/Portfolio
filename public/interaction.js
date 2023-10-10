@@ -443,7 +443,7 @@ function _rt(val) {
    *
    * @namespace Utils
    */
-  export const Utils = {
+const Utils = {
     /**
      * determine whether it is a `Function`
      *

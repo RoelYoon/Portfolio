@@ -241,7 +241,7 @@ window.addEventListener('resize', ()=>{
     if(!sceneYLock[curScene]){
         let isTouchPad = e.wheelDeltaY ? e.wheelDeltaY === -3 * e.deltaY : e.deltaMode === 0
         //let dY = isTouchPad?e.deltaY : e.wheelDeltaY * (-1); 
-        let d = (Math.abs(e.deltaY)>7 ? (e.deltaY > 0)?7:-7 : e.deltaY)*(isTouchPad?3/4:2); 
+        let d = (Math.abs(e.deltaY)>6 ? (e.deltaY > 0)?6:-6 : e.deltaY)*(isTouchPad?3/4:2); 
         targetCameraPos.y=camera.position.y;
         targetOrbitPos.y=controls.target.y; 
         targetCameraPos.y-=d; 

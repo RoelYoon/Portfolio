@@ -189,6 +189,7 @@ window.addEventListener('resize', ()=>{
         targetCameraPos.y+= Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY; 
         targetOrbitPos.y+= Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY;
     }
+    console.log(sceneYLock[curScene]);
     // code to increment object.position.z 
   }, true);
 /*

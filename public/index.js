@@ -77,8 +77,8 @@ scene.add( panel );
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', function ( gltf ) {
 	gltf.scene.position.x=moveX*id;
     gltf.scene.position.z=moveZ*id;
-    gltf.scene.position.x-=9;
-    gltf.scene.position.y+=4;
+    gltf.scene.position.x+=5;
+    gltf.scene.position.y-=10;
     gltf.scene.scale.set(1/30,1/30,1/30);
     models.push(gltf.scene);
     modelRotation.push(new THREE.Vector3(0,0.03,0));
@@ -105,13 +105,13 @@ sceneYLock.push(false);
 addSprite(1248,200,1/60,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png');
 
 //maincode sprite
-addSprite(377,662,1/40,id,-5,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png');
+addSprite(377,662,1/40,id,-5,-14,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png');
 
 //description
 addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/description.png');
 
 //explanation
-addSprite(688,514,1/60,id,5,-5,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
+addSprite(688,514,1/60,id,5,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
 
 
 //light

@@ -160,6 +160,9 @@ addSprite(476,96,1/20,id,0,-81,0,'https://roelyoon.github.io/Portfolio/Images/Un
 //s5
 addSprite(476,60,1/36,id,-6.5,-84,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s5.png');
 
+//robot 1
+addSprite(476,634,1/15,id,0,-90,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot.jpeg');
+
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

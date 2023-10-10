@@ -146,10 +146,11 @@ camera.position.z = 30;
 scene.add(camera); 
 
 const canvas  = document.querySelector(".webgl");
+/*
 canvas.style.width = Math.floor(sizes.width * window.devicePixelRatio); 
 canvas.style.height = Math.floor(sizes.height * window.devicePixelRatio); 
 canvas.width = Math.floor(sizes.width * window.devicePixelRatio);
-canvas.height = Math.floor(sizes.height * window.devicePixelRatio);
+canvas.height = Math.floor(sizes.height * window.devicePixelRatio);*/
 /*
 let size = 200
 canvas.style.width = `${size}px`;

@@ -125,6 +125,15 @@ addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challeng
 //explanation
 addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
 
+//scene 2
+sceneYLock.push(false);
+id++; 
+
+//title
+
+//prototypes
+
+
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

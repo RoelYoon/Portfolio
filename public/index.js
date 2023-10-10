@@ -161,13 +161,13 @@ addSprite(476,96,1/20,id,0,-81,0,'https://roelyoon.github.io/Portfolio/Images/Un
 addSprite(476,60,1/36,id,-6.5,-84,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s5.png');
 
 //robot 1
-addSprite(476,338,1/15,id,0,-97,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot.jpeg');
+addSprite(476,338,1/20,id,0,-97,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot.jpeg');
 
 //robot 2
-addSprite(476,504,1/15,id,0,-126,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot bottom.jpeg');
+addSprite(476,504,1/20,id,0,-126,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot bottom.jpeg');
 
 //robot 3
-addSprite(476,504,1/15,id,0,-161,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot close.jpeg');
+addSprite(476,504,1/20,id,0,-161,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot close.jpeg');
 
 
 

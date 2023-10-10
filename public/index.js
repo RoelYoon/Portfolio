@@ -268,6 +268,7 @@ const loop = ()=>{
     }
     controls.update(); 
     renderer.render(scene,camera); 
+    console.log(canvas.width+"x"+canvas.height);
     window.requestAnimationFrame(loop); 
 }
 

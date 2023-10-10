@@ -72,7 +72,7 @@ scene.add( panel );
 
 let ratioWidth = 1238;
 let ratioHeight = 194; 
-let scaleFactor = 1/60
+let scaleFactor = 1/59;
 
 //programming challenge 1 title
 const pc1TitleMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png' ) } );
@@ -97,7 +97,7 @@ titleBackPLight.position.set(0,-2,-4);
 titleTopLight.position.set(0,10,4); 
 const hLight = new THREE.HemisphereLight( 0xffffff, 0x080820, 50000);
 const amblight = new THREE.AmbientLight(0xffffff,1);
-scene.add(titleBackPLight,titleTopLight,amblight); 
+scene.add(titleBackPLight,titleTopLight); 
 
 
 //camera

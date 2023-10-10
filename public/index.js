@@ -146,8 +146,8 @@ camera.position.z = 30;
 scene.add(camera); 
 
 const canvas  = document.querySelector(".webgl");
-canvas.style.width = `${sizes.width}px`;
-canvas.style.height = `${sizes.height}px`;
+canvas.style.width = `200px`;
+canvas.style.height = `200px`;
 canvas.width = `${sizes.width}px`;
 canvas.height = `${sizes.height}px`;
 const renderer = new THREE.WebGLRenderer({ canvas }); 

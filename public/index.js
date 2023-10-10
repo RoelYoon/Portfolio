@@ -158,7 +158,7 @@ addSprite(476,75,1/18,id,0,-77,0,'https://roelyoon.github.io/Portfolio/Images/Un
 addSprite(476,96,1/20,id,0,-81,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/build.png');
 
 //s5
-addSprite(476,60,1/34,id,-6,-84,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s5.png');
+addSprite(476,60,1/35,id,-6.1,-84,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s5.png');
 
 
 //light
@@ -241,7 +241,7 @@ window.addEventListener('resize', ()=>{
     if(!sceneYLock[curScene]){
         let isTouchPad = e.wheelDeltaY ? e.wheelDeltaY === -3 * e.deltaY : e.deltaMode === 0
         //let dY = isTouchPad?e.deltaY : e.wheelDeltaY * (-1); 
-        let d = (Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)*(isTouchPad?3/4:2); 
+        let d = (Math.abs(e.deltaY)>7 ? (e.deltaY > 0)?7:-7 : e.deltaY)*(isTouchPad?3/4:2); 
         targetCameraPos.y=camera.position.y;
         targetOrbitPos.y=controls.target.y; 
         targetCameraPos.y-=d; 

@@ -79,7 +79,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', fu
     gltf.scene.z=moveZ*id;
     gltf.scene.position.x-=9;
     gltf.scene.position.y+=4;
-    gltf.scene.scale.set(5,5,5);
+    gltf.scene.scale.set(1/10,1/10,1/10);
     models.push(gltf.scene);
     modelRotation.push(new THREE.Vector3(0,0.01,0));
     modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));

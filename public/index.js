@@ -105,13 +105,13 @@ sceneYLock.push(false);
 addSprite(1248,200,1/60,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png');
 
 //maincode sprite
-addSprite(377,662,1/40,id,-5,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png');
+addSprite(377,662,1/40,id,-5,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png');
 
 //description
 addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/description.png');
 
 //explanation
-addSprite(688,514,1/60,id,5,-8,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
+addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
 
 
 //light

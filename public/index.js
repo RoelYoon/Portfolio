@@ -80,7 +80,9 @@ sceneYLock.push(false);
 let ratioWidth = 1238;
 let ratioHeight = 194; 
 let scaleFactor = 1/60;
-const pc1TitleMaterial = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png' ) } );
+const pc1TitleTexture = new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png' ); 
+pc1TitleTexture.colorSpace = THREE.SRGBColorSpace; 
+const pc1TitleMaterial = new THREE.SpriteMaterial( { map:  pc1TitleTexture} );
 const pc1Title = new THREE.Sprite( pc1TitleMaterial );
 pc1Title.position.set(moveX*id,0,moveZ*id);
 pc1Title.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
@@ -90,7 +92,9 @@ scene.add( pc1Title );
 ratioWidth = 377
 ratioHeight = 662
 scaleFactor = 1/40
-const mainCode1Material = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
+const mainCode1Texture = new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' );
+mainCode1Texture.colorSpace = THREE.SRGBColorSpace; 
+const mainCode1Material = new THREE.SpriteMaterial( { map: mainCode1Texture} );
 const mainCode1 = new THREE.Sprite( mainCode1Material );
 mainCode1.position.set(moveX*id,-15,moveZ*id);
 mainCode1.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);

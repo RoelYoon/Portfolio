@@ -197,6 +197,14 @@ window.addEventListener("onscroll", function(e) {
     console.log(window.scrollY);
     // code to increment object.position.z 
   }, true);
+  window.addEventListener("wheel", function(e) {
+    console.log(window.scrollY);
+    // code to increment object.position.z 
+  }, true);
+  document.addEventListener("wheel", function(e) {
+    console.log(window.scrollY);
+    // code to increment object.position.z 
+  }, true);
 /*
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();

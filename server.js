@@ -3,7 +3,7 @@ const path = require("path");
 
 const app = express();
 app.use(express.static(path.join(__dirname,"./public")));
-app.use(express.static(path.join(__dirname,"./node_modules")));
+app.use(express.static(path.join(__dirname,"./node_modules"),'models'));
 app.get("/",
 async (req,res)=>{
     await res.sendFile(path.resolve(__dirname,"./public/index.html"));

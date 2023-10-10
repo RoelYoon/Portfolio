@@ -223,7 +223,7 @@ window.addEventListener('resize', ()=>{
         let isTouchPad = e.wheelDeltaY ? e.wheelDeltaY === -3 * e.deltaY : e.deltaMode === 0
         let dY = isTouchPad?e.deltaY : e.wheelDeltaY * (-1); 
         let d = (Math.abs(dY)>5 ? (dY > 0)?5:-5 : dY)/(isTouchPad?10:2); 
-        if(d>0.1){
+        if(Math.abs(d)>0.1){
         targetCameraPos.y-=d; 
         targetOrbitPos.y-=d;
         lerpFrames=5;

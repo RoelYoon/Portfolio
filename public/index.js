@@ -74,9 +74,21 @@ anim.push(function(id){
 });
 scene.add( panel );
 
+function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset,textureResource){
+    const texture = new THREE.TextureLoader().load( textureResource ); 
+    texture.colorSpace = THREE.SRGBColorSpace; 
+    const material = new THREE.SpriteMaterial( { map:  texture} );
+    const sprite = new THREE.Sprite( material );
+    sprite.position.set(moveX*id+xOffset,0+yOffset,moveZ*id+zOffset);
+    sprite.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
+    scene.add( sprite );
+}
+
 //scene 2
 sceneYLock.push(false);
 //programming challenge 1 title
+addSprite(1248,200,1/60,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png');
+/*
 let ratioWidth = 1248;
 let ratioHeight = 200; 
 let scaleFactor = 1/60;
@@ -86,9 +98,11 @@ const pc1TitleMaterial = new THREE.SpriteMaterial( { map:  pc1TitleTexture} );
 const pc1Title = new THREE.Sprite( pc1TitleMaterial );
 pc1Title.position.set(moveX*id,0,moveZ*id);
 pc1Title.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
-scene.add( pc1Title );
+scene.add( pc1Title );*/
 
 //maincode sprite
+addSprite(377,662,1/40,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png');
+/*
 ratioWidth = 377
 ratioHeight = 662
 scaleFactor = 1/40
@@ -98,7 +112,22 @@ const mainCode1Material = new THREE.SpriteMaterial( { map: mainCode1Texture} );
 const mainCode1 = new THREE.Sprite( mainCode1Material );
 mainCode1.position.set(moveX*id,-15,moveZ*id);
 mainCode1.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
-scene.add( mainCode1 );
+scene.add( mainCode1 );*/
+
+//description
+addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/description.png');
+/*
+ratioWidth = 1248;
+ratioHeight = 200; 
+scaleFactor = 1/60;
+const desc1Texture = new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png' ); 
+desc1Texture.colorSpace = THREE.SRGBColorSpace; 
+const desc1Material = new THREE.SpriteMaterial( { map:  desc1Texture} );
+const desc1 = new THREE.Sprite( desc1Material );
+desc1.position.set(moveX*id,0,moveZ*id);
+desc1.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
+scene.add( desc1 );*/
+
 
 
 //light

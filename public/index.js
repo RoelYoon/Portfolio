@@ -134,10 +134,10 @@ addSprite(482,84,1/23,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit
 addSprite(483,69,1/17.5,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/goal.png');
 
 //subtitle 1
-addSprite(476,74,1/20,id,0,-9,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/ideate.png');
+addSprite(476,74,1/20,id,0,-8.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/ideate.png');
 
 //s1
-addSprite(483,90,1/18,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s1.png');
+addSprite(483,90,1/18,id,0,-14,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s1.png');
 
 //design blueprint 1
 addSprite(483,355,1/15,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype1.jpeg');

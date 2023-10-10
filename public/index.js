@@ -185,12 +185,11 @@ window.addEventListener('resize', ()=>{
     renderer.setSize(sizes.width,sizes.height);
 })
   window.addEventListener("wheel", function(e) {
-    if(!sceneYLock[curScene]){
+    if(!sceneYLock[curScene] && (targetCameraPos.y<200 && targetCameraPos.y>-200)){
         targetCameraPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/10; 
         targetOrbitPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/10;
         lerpFrames=5;
     }
-    console.log(sceneYLock[curScene]);
     // code to increment object.position.z 
   }, true);
 /*

@@ -130,9 +130,10 @@ sceneYLock.push(false);
 id++;
 
 //title
+addSprite(482,84,1/30,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/title.png');
+addSprite(483,69,1/30,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/goal.png');
 
-//prototypes
-addSprite(482,84,1/20,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/title.png');
+//design blueprints
 addSprite(483,355,1/15,id,0,-20,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype1.jpeg');
 addSprite(483,355,1/15,id,0,-40,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype2.jpeg');
 

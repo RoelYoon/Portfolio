@@ -2346,7 +2346,7 @@ class Ticker extends EventDispatcher {
  * @class
  * @extends InteractionManager
  */
-class Interaction extends InteractionManager {
+export class Interaction extends InteractionManager {
   /**
    * @param {WebGLRenderer} renderer - A reference to the current renderer
    * @param {Scene} scene - A reference to the current scene

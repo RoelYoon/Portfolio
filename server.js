@@ -14,7 +14,7 @@ async (req,res)=>{
 })
 app.get("/three.interaction",
 async (req,res)=>{
-    await res.sendFile(path.resolve(__dirname,"./node_modules/three.interaction"));
+    await res.sendFile(path.resolve(__dirname,"./node_modules/three.interaction/"));
 })
 app.all('*',(req,res)=>{
     res.send("<h1>404 boiii</h1>").status(404);

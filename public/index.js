@@ -1,7 +1,7 @@
 import * as THREE from "/three";
 import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
-import { Interaction } from '/three.interaction/src/interaction/Interaction.js';
+//import { Interaction } from '/three.interaction/src/interaction/Interaction.js';
 const scene = new THREE.Scene(); 
 const moveX=60; const moveZ=100;
 const sizes = {
@@ -19,7 +19,7 @@ renderer.setSize(sizes.width,sizes.height);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.render(scene,camera); 
 
-const interaction = new Interaction(renderer, scene, camera);
+//const interaction = new Interaction(renderer, scene, camera);
 //sphere object
 /*
 const geometry = new THREE.TorusGeometry( 5, 3, 16, 50 ); 
@@ -106,7 +106,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', fu
     modelRotation.push(new THREE.Vector3(0,0.03,0));
     modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
     anim.push(function(){});
-    gltf.on('click',function(ev){window.open("https://www.youtube.com/watch?v=7YWV9jVAKl8");});
+    //gltf.on('click',function(ev){window.open("https://www.youtube.com/watch?v=7YWV9jVAKl8");});
     scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );

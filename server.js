@@ -3,7 +3,7 @@ const path = require("path");
 
 const app = express();
 app.use(express.static(path.join(__dirname,"./public")));
-app.use(express.static(path.join(__dirname,"./node_modules"),'models'));
+app.use(express.static(path.join(__dirname,"./node_modules")));
 app.get("/",
 async (req,res)=>{
     await res.sendFile(path.resolve(__dirname,"./public/index.html"));
@@ -11,10 +11,6 @@ async (req,res)=>{
 app.get("/three",
 async (req,res)=>{
     await res.sendFile(path.resolve(__dirname,"./node_modules/three/build/three.module.js"));
-})
-app.get("/three.interaction/src",
-async (req,res)=>{
-    await res.sendFile(path.resolve(__dirname,"./node_modules/three.interaction/src/"));
 })
 app.all('*',(req,res)=>{
     res.send("<h1>404 boiii</h1>").status(404);

@@ -227,7 +227,6 @@ window.addEventListener('resize', ()=>{
         targetOrbitPos.y=controls.target.y; 
         targetCameraPos.y-=d; 
         targetOrbitPos.y-=d;
-        controls.target.lerp(targetOrbitPos,0.3);
         lerpFrames=2;
     }
     // code to increment object.position.z 

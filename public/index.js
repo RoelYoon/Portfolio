@@ -246,7 +246,6 @@ const loop = ()=>{
         camera.position.lerp(targetCameraPos,0.1);
         controls.target.lerp(targetOrbitPos,0.1);
         lerpFrames--;
-        console.log(lerpFrames);
         if(camera.position==controls.target){
             controls.target.z+=-0.01;
         }
@@ -259,7 +258,6 @@ const loop = ()=>{
     }
     controls.update(); 
     renderer.render(scene,camera); 
-    console.log(canvas.width+"x"+canvas.height);
     window.requestAnimationFrame(loop); 
 }
 

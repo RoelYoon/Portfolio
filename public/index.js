@@ -220,8 +220,8 @@ window.addEventListener('resize', ()=>{
 })
   window.addEventListener("wheel", function(e) {
     if(!sceneYLock[curScene] && (targetCameraPos.y<50 && targetCameraPos.y>-50)){
-        targetCameraPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/5; 
-        targetOrbitPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/5;
+        targetCameraPos.y-=(Math.abs(e.deltaY)>7 ? (e.deltaY > 0)?7:-7 : e.deltaY)/10; 
+        targetOrbitPos.y-=(Math.abs(e.deltaY)>7 ? (e.deltaY > 0)?7:-7 : e.deltaY)/10;
         lerpFrames=5;
     }
     // code to increment object.position.z 

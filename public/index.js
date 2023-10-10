@@ -4,8 +4,8 @@ import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
 const scene = new THREE.Scene(); 
 const moveX=60; const moveZ=100;
 const sizes = {
-    width: window.innerWidth,
-    height: window.innerHeight
+    width: window.innerWidth* window.devicePixelRatio,
+    height: window.innerHeight* window.devicePixelRatio
 }
 //sphere object
 /*
@@ -147,8 +147,8 @@ scene.add(camera);
 
 const canvas  = document.querySelector(".webgl");
 console.log(window.devicePixelRatio);
-canvas.width = sizes.width * window.devicePixelRatio;
-canvas.height = sizes.height * window.devicePixelRatio;
+canvas.width = sizes.width;
+canvas.height = sizes.height;
 /*
 let size = 200
 canvas.style.width = `${size}px`;
@@ -156,7 +156,7 @@ canvas.style.height = `${size}px`;
 canvas.width = Math.floor(size * window.devicePixelRatio);
 canvas.height =  Math.floor(size * window.devicePixelRatio);*/
 const renderer = new THREE.WebGLRenderer({ canvas }); 
-//renderer.setSize(sizes.width,sizes.height); 
+renderer.setSize(sizes.width,sizes.height); 
 renderer.render(scene,camera); 
 
 const controls = new OrbitControls(camera,canvas);

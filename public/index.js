@@ -83,10 +83,10 @@ scene.add( pc1Title );
 //maincode sprite
 ratioWidth = 377
 ratioHeight = 662
-scaleFactor = 1/60
+scaleFactor = 1/40
 const mainCode1Material = new THREE.SpriteMaterial( { map: new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' ) } );
 const mainCode1 = new THREE.Sprite( mainCode1Material );
-mainCode1.position.set(moveX*id,-10,moveZ*id);
+mainCode1.position.set(moveX*id,-15,moveZ*id);
 mainCode1.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
 scene.add( mainCode1 );
 
@@ -148,8 +148,10 @@ function leftArrClick(){
     if(curPos!=0){
         curPos--;
         targetCameraPos.x-=moveX; 
+        targetCameraPos.y = 0; 
         targetCameraPos.z-=moveZ; 
         targetOrbitPos.x-=moveX; 
+        targetOrbitPos.y = 0;
         targetOrbitPos.z-=moveZ;
         lerpFrames=60;
     }
@@ -158,8 +160,10 @@ function rightArrClick(){
     if(curPos!=1){
         curPos++;
         targetCameraPos.x+=moveX;
+        targetCameraPos.y = 0; 
         targetCameraPos.z+=moveZ;
         targetOrbitPos.x+=moveX;
+        targetOrbitPos.y = 0;
         targetOrbitPos.z+=moveZ; 
         lerpFrames=60;
     }
@@ -175,6 +179,24 @@ window.addEventListener('resize', ()=>{
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);
 })
+
+window.addEventListener("scroll", function(e) {
+    console.log(window.scrollY);
+    // code to increment object.position.z 
+  }, true);
+
+window.addEventListener("onscroll", function(e) {
+    console.log(window.scrollY);
+    // code to increment object.position.z 
+  }, true);
+  document.addEventListener("onscroll", function(e) {
+    console.log(window.scrollY);
+    // code to increment object.position.z 
+  }, true);
+  document.addEventListener("scroll", function(e) {
+    console.log(window.scrollY);
+    // code to increment object.position.z 
+  }, true);
 /*
 document.body.addEventListener('keypress',(keyEvent)=>{
     let direction = new THREE.Vector3();

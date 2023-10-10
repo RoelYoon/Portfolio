@@ -3,7 +3,7 @@ import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
 import {Interaction} from './interaction.js';
 const scene = new THREE.Scene(); 
-const moveX=60; const moveZ=100;
+const moveX=80; const moveZ=100;
 const sizes = {
     width: window.innerWidth,
     height: window.innerHeight

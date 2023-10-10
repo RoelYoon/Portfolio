@@ -1,6 +1,5 @@
 
 import { EventDispatcher,Raycaster,Object3D, Vector2} from '/three';
-export default Interaction;
 /**
  * whether displayObject is interactively
  */

@@ -225,7 +225,7 @@ window.addEventListener('resize', ()=>{
         let d = (Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/(isTouchPad?10:2); 
         targetCameraPos.y-=d; 
         targetOrbitPos.y-=d;
-        lerpFrames=5;
+        lerpFrames=2;
     }
     // code to increment object.position.z 
   }, true);

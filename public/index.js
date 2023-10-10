@@ -1,7 +1,7 @@
 import * as THREE from "/three";
 import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
-import { Interaction } from '/three.interaction';
+import { Interaction } from '/three.interaction/src/interaction/Interaction.js';
 const scene = new THREE.Scene(); 
 const moveX=60; const moveZ=100;
 const sizes = {

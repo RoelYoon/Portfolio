@@ -19,7 +19,7 @@ renderer.setSize(sizes.width,sizes.height);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.render(scene,camera); 
 
-const interaction = new Interaction(renderer, scene, camera);
+//const interaction = new Interaction(renderer, scene, camera);
 //sphere object
 /*
 const geometry = new THREE.TorusGeometry( 5, 3, 16, 50 ); 

@@ -1,12 +1,25 @@
 import * as THREE from "/three";
 import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
+import { Interaction } from '/three.interaction';
 const scene = new THREE.Scene(); 
 const moveX=60; const moveZ=100;
 const sizes = {
     width: window.innerWidth,
     height: window.innerHeight
 }
+//camera
+const camera = new THREE.PerspectiveCamera(45, sizes.width/sizes.height);
+camera.position.z = 30; 
+scene.add(camera); 
+//renderer
+const canvas  = document.querySelector(".webgl");
+const renderer = new THREE.WebGLRenderer({ canvas }); 
+renderer.setSize(sizes.width,sizes.height); 
+renderer.setPixelRatio(window.devicePixelRatio);
+renderer.render(scene,camera); 
+
+const interaction = new Interaction(renderer, scene, camera);
 //sphere object
 /*
 const geometry = new THREE.TorusGeometry( 5, 3, 16, 50 ); 
@@ -16,7 +29,15 @@ const material = new THREE.MeshStandardMaterial({
 });
 const mesh = new THREE.Mesh(geometry,material); 
 scene.add(mesh); */
-
+function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset,textureResource){
+    const texture = new THREE.TextureLoader().load( textureResource ); 
+    texture.colorSpace = THREE.SRGBColorSpace; 
+    const material = new THREE.SpriteMaterial( { map:  texture} );
+    const sprite = new THREE.Sprite( material );
+    sprite.position.set(moveX*id+xOffset,0+yOffset,moveZ*id+zOffset);
+    sprite.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
+    scene.add( sprite );
+}
 //load objects
 let models = [];
 let modelRotation = [];
@@ -74,6 +95,7 @@ anim.push(function(id){
 });
 scene.add( panel );
 
+//youtube logo
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', function ( gltf ) {
 	gltf.scene.position.x=moveX*id;
     gltf.scene.position.z=moveZ*id;
@@ -84,22 +106,12 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', fu
     modelRotation.push(new THREE.Vector3(0,0.03,0));
     modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
     anim.push(function(){});
+    cube.on('click',function(ev){window.open("https://www.youtube.com/watch?v=7YWV9jVAKl8");});
     scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );
 } );
 
-function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset,textureResource){
-    const texture = new THREE.TextureLoader().load( textureResource ); 
-    texture.colorSpace = THREE.SRGBColorSpace; 
-    const material = new THREE.SpriteMaterial( { map:  texture} );
-    const sprite = new THREE.Sprite( material );
-    sprite.position.set(moveX*id+xOffset,0+yOffset,moveZ*id+zOffset);
-    sprite.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
-    scene.add( sprite );
-}
-
-//scene 2
 sceneYLock.push(false);
 //programming challenge 1 title
 addSprite(1248,200,1/60,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png');
@@ -122,18 +134,6 @@ titleTopLight.position.set(0,10,4);
 const hLight = new THREE.HemisphereLight( 0xffffff, 0x080820, 50000);
 const amblight = new THREE.AmbientLight(0xffffff,1);
 scene.add(titleBackPLight,titleTopLight,amblight); 
-
-
-//camera
-const camera = new THREE.PerspectiveCamera(45, sizes.width/sizes.height);
-camera.position.z = 30; 
-scene.add(camera); 
-
-const canvas  = document.querySelector(".webgl");
-const renderer = new THREE.WebGLRenderer({ canvas }); 
-renderer.setSize(sizes.width,sizes.height); 
-renderer.setPixelRatio(window.devicePixelRatio);
-renderer.render(scene,camera); 
 
 const controls = new OrbitControls(camera,canvas);
 controls.enableDamping=true;

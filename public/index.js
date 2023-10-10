@@ -157,6 +157,9 @@ addSprite(476,75,1/18,id,0,-77,0,'https://roelyoon.github.io/Portfolio/Images/Un
 //subtitle 2
 addSprite(476,96,1/20,id,0,-81,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/build.png');
 
+//s5
+addSprite(476,60,1/20,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s5.png');
+
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

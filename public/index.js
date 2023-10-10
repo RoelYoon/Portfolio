@@ -186,8 +186,8 @@ window.addEventListener('resize', ()=>{
 })
   window.addEventListener("wheel", function(e) {
     if(!sceneYLock[curScene]){
-        targetCameraPos.y+=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/10; 
-        targetOrbitPos.y+=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/10;
+        targetCameraPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/10; 
+        targetOrbitPos.y-=(Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)/10;
         lerpFrames=5;
     }
     console.log(sceneYLock[curScene]);

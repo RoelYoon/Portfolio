@@ -225,8 +225,7 @@ window.addEventListener('resize', ()=>{
     camera.aspect = sizes.width/sizes.height;
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);
-    renderer.canvas.width = sizes.width * window.devicePixelRatio;
-    renderer.canvas.height = sizes.width * window.devicePixelRatio;
+    renderer.canvas.setSize(sizes.width * window.devicePixelRatio,sizes.height * window.devicePixelRatio);
 })
   window.addEventListener("wheel", function(e) {
     if(!sceneYLock[curScene] && (targetCameraPos.y<200 && targetCameraPos.y>-200)){

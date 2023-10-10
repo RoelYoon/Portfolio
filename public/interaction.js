@@ -1,6 +1,6 @@
 
 import { EventDispatcher,Raycaster,Object3D, Vector2} from '/three';
-
+export default Interaction;
 /**
  * whether displayObject is interactively
  */
@@ -2346,7 +2346,7 @@ class Ticker extends EventDispatcher {
  * @class
  * @extends InteractionManager
  */
-export class Interaction extends InteractionManager {
+class Interaction extends InteractionManager {
   /**
    * @param {WebGLRenderer} renderer - A reference to the current renderer
    * @param {Scene} scene - A reference to the current scene

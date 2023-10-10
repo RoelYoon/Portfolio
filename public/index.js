@@ -224,6 +224,7 @@ window.addEventListener('resize', ()=>{
         //let dY = isTouchPad?e.deltaY : e.wheelDeltaY * (-1); 
         let d = (Math.abs(e.deltaY)>5 ? (e.deltaY > 0)?5:-5 : e.deltaY)*(isTouchPad?3/4:2); 
         targetCameraPos.y=camera.position.y;
+        controls.target.lerp(targetOrbitPos,0.2);//camera bring back
         targetOrbitPos.y=controls.target.y; 
         targetCameraPos.y-=d; 
         targetOrbitPos.y-=d;

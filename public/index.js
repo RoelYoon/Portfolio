@@ -188,7 +188,7 @@ function leftArrClick(){
     }
 }
 function rightArrClick(){
-    if(curScene!=1){
+    if(curScene!=id){
         curScene++;
         targetCameraPos.x+=moveX;
         targetCameraPos.y = 0; 

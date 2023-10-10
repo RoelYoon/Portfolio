@@ -4,8 +4,8 @@ import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
 const scene = new THREE.Scene(); 
 const moveX=60; const moveZ=100;
 const sizes = {
-    width: window.innerWidth* window.devicePixelRatio,
-    height: window.innerHeight* window.devicePixelRatio
+    width: window.innerWidth,
+    height: window.innerHeight
 }
 //sphere object
 /*
@@ -225,6 +225,8 @@ window.addEventListener('resize', ()=>{
     camera.aspect = sizes.width/sizes.height;
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);
+    renderer.canvas.width = sizes.width * window.devicePixelRatio;
+    renderer.canvas.height = sizes.width * window.devicePixelRatio;
 })
   window.addEventListener("wheel", function(e) {
     if(!sceneYLock[curScene] && (targetCameraPos.y<200 && targetCameraPos.y>-200)){

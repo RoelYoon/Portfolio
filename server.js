@@ -12,6 +12,10 @@ app.get("/three",
 async (req,res)=>{
     await res.sendFile(path.resolve(__dirname,"./node_modules/three/build/three.module.js"));
 })
+app.get("/three.interaction",
+async (req,res)=>{
+    await res.sendFile(path.resolve(__dirname,"./node_modules/three.interaction/build/three.interaction.js"));
+})
 app.all('*',(req,res)=>{
     res.send("<h1>404 boiii</h1>").status(404);
 });

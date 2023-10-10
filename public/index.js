@@ -156,7 +156,7 @@ canvas.style.height = `${size}px`;
 canvas.width = Math.floor(size * window.devicePixelRatio);
 canvas.height =  Math.floor(size * window.devicePixelRatio);*/
 const renderer = new THREE.WebGLRenderer({ canvas }); 
-renderer.setSize(sizes.width,sizes.height); 
+//renderer.setSize(sizes.width,sizes.height); 
 renderer.render(scene,camera); 
 
 const controls = new OrbitControls(camera,canvas);

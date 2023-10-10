@@ -161,7 +161,7 @@ addSprite(476,96,1/20,id,0,-81,0,'https://roelyoon.github.io/Portfolio/Images/Un
 addSprite(476,60,1/36,id,-6.5,-84,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s5.png');
 
 //robot 1
-addSprite(476,338,1/15,id,0,-95,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot.jpeg');
+addSprite(476,338,1/15,id,0,-105,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot.jpeg');
 
 
 //light

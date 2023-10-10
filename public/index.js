@@ -106,7 +106,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', fu
     modelRotation.push(new THREE.Vector3(0,0.03,0));
     modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
     anim.push(function(){});
-    gltf.on('click',function(ev){window.open("https://www.youtube.com/watch?v=7YWV9jVAKl8");});
+    gltf.scene.on('click',function(ev){window.open("https://www.youtube.com/watch?v=7YWV9jVAKl8");});
     scene.add( gltf.scene );
 }, undefined, function ( error ) {
 	console.error( error );

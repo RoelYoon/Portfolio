@@ -132,9 +132,8 @@ id++;
 //title
 
 //prototypes
-
-
-
+addSprite(483,355,1/60,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype1.jpeg');
+addSprite(483,355,1/60,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype1.jpeg');
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);
 const titleTopLight = new THREE.PointLight(0xffffff,50000);

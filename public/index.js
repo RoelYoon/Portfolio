@@ -74,6 +74,21 @@ anim.push(function(id){
 });
 scene.add( panel );
 
+GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', function ( gltf ) {
+	gltf.scene.x=moveX*id;
+    gltf.scene.z=moveZ*id;
+    gltf.scene.position.x-=9;
+    gltf.scene.position.y+=4;
+    gltf.scene.scale.set(5,5,5);
+    models.push(gltf.scene);
+    modelRotation.push(new THREE.Vector3(0,0.01,0));
+    modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
+    anim.push(function(){});
+    scene.add( gltf.scene );
+}, undefined, function ( error ) {
+	console.error( error );
+} );
+
 function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset,textureResource){
     const texture = new THREE.TextureLoader().load( textureResource ); 
     texture.colorSpace = THREE.SRGBColorSpace; 
@@ -88,46 +103,15 @@ function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset
 sceneYLock.push(false);
 //programming challenge 1 title
 addSprite(1248,200,1/60,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png');
-/*
-let ratioWidth = 1248;
-let ratioHeight = 200; 
-let scaleFactor = 1/60;
-const pc1TitleTexture = new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png' ); 
-pc1TitleTexture.colorSpace = THREE.SRGBColorSpace; 
-const pc1TitleMaterial = new THREE.SpriteMaterial( { map:  pc1TitleTexture} );
-const pc1Title = new THREE.Sprite( pc1TitleMaterial );
-pc1Title.position.set(moveX*id,0,moveZ*id);
-pc1Title.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
-scene.add( pc1Title );*/
 
 //maincode sprite
-addSprite(377,662,1/40,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png');
-/*
-ratioWidth = 377
-ratioHeight = 662
-scaleFactor = 1/40
-const mainCode1Texture = new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png' );
-mainCode1Texture.colorSpace = THREE.SRGBColorSpace; 
-const mainCode1Material = new THREE.SpriteMaterial( { map: mainCode1Texture} );
-const mainCode1 = new THREE.Sprite( mainCode1Material );
-mainCode1.position.set(moveX*id,-15,moveZ*id);
-mainCode1.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
-scene.add( mainCode1 );*/
+addSprite(377,662,1/40,id,-5,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/main.png');
 
 //description
 addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/description.png');
-/*
-ratioWidth = 1248;
-ratioHeight = 200; 
-scaleFactor = 1/60;
-const desc1Texture = new THREE.TextureLoader().load( 'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png' ); 
-desc1Texture.colorSpace = THREE.SRGBColorSpace; 
-const desc1Material = new THREE.SpriteMaterial( { map:  desc1Texture} );
-const desc1 = new THREE.Sprite( desc1Material );
-desc1.position.set(moveX*id,0,moveZ*id);
-desc1.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
-scene.add( desc1 );*/
 
+//explanation
+addSprite(688,514,1/60,id,5,-5,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
 
 
 //light

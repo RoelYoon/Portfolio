@@ -1,5 +1,6 @@
 
-import * as THREE from "/three";
+import { EventDispatcher,Raycaster,Object3D, Vector2} from '/three';
+
 /**
  * whether displayObject is interactively
  */

@@ -179,30 +179,8 @@ window.addEventListener('resize', ()=>{
     camera.updateProjectionMatrix();
     renderer.setSize(sizes.width,sizes.height);
 })
-
-window.addEventListener("scroll", function(e) {
-    console.log(window.scrollY);
-    // code to increment object.position.z 
-  }, true);
-
-window.addEventListener("onscroll", function(e) {
-    console.log(window.scrollY);
-    // code to increment object.position.z 
-  }, true);
-  document.addEventListener("onscroll", function(e) {
-    console.log(window.scrollY);
-    // code to increment object.position.z 
-  }, true);
-  document.addEventListener("scroll", function(e) {
-    console.log(window.scrollY);
-    // code to increment object.position.z 
-  }, true);
   window.addEventListener("wheel", function(e) {
-    console.log(window.scrollY);
-    // code to increment object.position.z 
-  }, true);
-  document.addEventListener("wheel", function(e) {
-    console.log(window.scrollY);
+    console.log(e.deltaY);
     // code to increment object.position.z 
   }, true);
 /*

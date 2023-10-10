@@ -131,7 +131,7 @@ id++;
 
 //title
 addSprite(482,84,1/23,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/title.png');
-addSprite(483,69,1/17,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/goal.png');
+addSprite(483,69,1/17.5,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/goal.png');
 
 //s1
 addSprite(483,90,1/18,id,0,-9,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s1.png');

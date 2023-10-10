@@ -4,8 +4,8 @@ import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
 const scene = new THREE.Scene(); 
 const moveX=60; const moveZ=100;
 const sizes = {
-    width: window.innerWidth,
-    height: window.innerHeight
+    width: Math.floor(window.innerWidth * window.devicePixelRatio),
+    height: Math.floor(window.innerHeight * window.devicePixelRatio)
 }
 //sphere object
 /*

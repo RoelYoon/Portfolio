@@ -146,10 +146,11 @@ camera.position.z = 30;
 scene.add(camera); 
 
 const canvas  = document.querySelector(".webgl");
-canvas.style.width = `200px`;
-canvas.style.height = `200px`;
-canvas.width = `${sizes.width}px`;
-canvas.height = `${sizes.height}px`;
+let size = 200
+canvas.style.width = `${size}px`;
+canvas.style.height = `${size}px`;
+canvas.width = Math.floor(size * window.devicePixelRatio);
+canvas.height =  Math.floor(size * window.devicePixelRatio);
 const renderer = new THREE.WebGLRenderer({ canvas }); 
 renderer.setSize(sizes.width,sizes.height); 
 renderer.render(scene,camera); 

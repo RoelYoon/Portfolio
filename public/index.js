@@ -137,7 +137,7 @@ addSprite(483,69,1/17.5,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Images/U
 addSprite(476,74,1/20,id,0,-8.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/ideate.png');
 
 //s1
-addSprite(483,90,1/18,id,0,-14,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s1.png');
+addSprite(483,90,1/18,id,0,-13,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s1.png');
 
 //design blueprint 1
 addSprite(483,355,1/15,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype1.jpeg');

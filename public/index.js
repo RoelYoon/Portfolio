@@ -140,16 +140,16 @@ addSprite(476,74,1/20,id,0,-8.5,0,'https://roelyoon.github.io/Portfolio/Images/U
 addSprite(483,90,1/18,id,0,-13,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s1.png');
 
 //design blueprint 1
-addSprite(483,355,1/15,id,0,-29,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype1.jpeg');
+addSprite(483,355,1/15,id,0,-28,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype1.jpeg');
 
 //s2
-addSprite(483,41,1/18,id,0,-44,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s2.png');
+addSprite(483,41,1/18,id,0,-43,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s2.png');
 
 //design 2
-addSprite(483,355,1/15,id,0,-59,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype2.jpeg');
+addSprite(483,355,1/15,id,0,-58,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Prototypes/prototype2.jpeg');
 
 //s3
-addSprite(483,55,1/18,id,0,-74,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s3.png');
+addSprite(483,55,1/18,id,0,-73,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s3.png');
 
 
 //light

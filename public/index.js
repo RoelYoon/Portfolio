@@ -64,7 +64,7 @@ function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additional
     })
 }
 let id = 0; 
-//scene 1
+//scene 1 title 
 sceneYLock.push(true); 
 //title
 /*
@@ -85,7 +85,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 */
 addModel(id,-9,4,0,5,new THREE.Vector3(0,0,0),function(){},function(gltf){gltf.scene.rotateX(Math.PI/3);},'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb');
 
-//scene 2
+//scene 2 disk maze
 id++;
 
 //color-changing panel
@@ -147,7 +147,7 @@ addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challeng
 //explanation
 addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
 
-//scene 2
+//scene 3 clawbot
 sceneYLock.push(false);
 id++;
 
@@ -185,6 +185,8 @@ addSprite(476,60,1/36,id,-6.5,-84,0,'https://roelyoon.github.io/Portfolio/Images
 //robot 1
 addSprite(476,338,1/20,id,0,-94,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot.jpeg');
 
+
+
 //robot 2
 addSprite(476,504,1/20,id,0,-120,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot bottom.jpeg');
 
@@ -194,6 +196,9 @@ addSprite(476,504,1/20,id,0,-151,0,'https://roelyoon.github.io/Portfolio/Images/
 //robot code
 addSprite(475,517,1/22,id,0,-180,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robotCode.png');
 
+//scene 4 number grid 
+sceneYLock.push(false);
+id++;
 
 
 

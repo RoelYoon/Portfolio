@@ -49,13 +49,13 @@ function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset
 
 const GLTFloader = new GLTFLoader();
 
-function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additionalAnim,rotate,modelResource){
+function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additionalAnim,additionalFunc,modelResource){
     GLTFloader.load( modelResource, function ( gltf ) {
     gltf.scene.position.x=moveX*id + xOffset;
     gltf.scene.position.y=yOffset;
     gltf.scene.position.z=moveZ*id + zOffset; 
     gltf.scene.scale.set(scaleFactor,scaleFactor,scaleFactor);
-    rotate(gltf);
+    additionalFunc(gltf);
     models.push(gltf.scene);
     modelRotation.push(rotationAnim);
     modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
@@ -117,7 +117,7 @@ anim.push(function(id){
 });
 scene.add( panel );
 
-//youtube logo
+/*youtube logo
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', function ( gltf ) {
 	gltf.scene.position.x=moveX;
     gltf.scene.position.z=moveZ;
@@ -133,8 +133,8 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', fu
 }, undefined, function ( error ) {
 	console.error( error );
 } );
-
-
+*/
+addModel(id,5,-17,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.youtube.com/watch?v=7YWV9jVAKl8");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 sceneYLock.push(false);
 //programming challenge 1 title
@@ -206,13 +206,16 @@ addSprite(1248,200,1/60,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenge
 //maincode sprite
 addSprite(377,662,1/40,id,-5,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
 
-//explanation 1
+//description 
 addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
 
+//exaplanation 1
+addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation1.png');
+
 //explanation 2
-addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
+//addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation2.png');
 
-
+addModel(id,5,-17,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.youtube.com/watch?v=7YWV9jVAKl8");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

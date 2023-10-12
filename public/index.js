@@ -207,10 +207,10 @@ addSprite(422,54,1/20,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/
 addSprite(580,102,1/25,id,0,-4,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
 
 //maincode sprite
-addSprite(422,404,1/40,id,-6,-11,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
+addSprite(422,404,1/40,id,-6,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
 
 //exaplanation 1
-addSprite(580,163,1/40,id,5,-7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');
+addSprite(580,163,1/40,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');
 
 //traverse
 addSprite(212,692,1/15,id,-6,-40,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/traverse.png');

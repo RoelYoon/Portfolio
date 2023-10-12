@@ -207,16 +207,16 @@ addSprite(422,54,1/20,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/
 addSprite(580,102,1/25,id,0,-4,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
 
 //maincode sprite
-addSprite(422,404,1/40,id,-6,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
+addSprite(422,404,1/40,id,-6.1,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
 
 //exaplanation 1
 addSprite(580,163,1/40,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');
 
 //traverse
-addSprite(212,692,1/15,id,-6,-40,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/traverse.png');
+addSprite(212,692,1/20,id,-6,-40,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/traverse.png');
 
 //explanation 2
-addSprite(580,385,1/30,id,5,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation2.png');
+addSprite(580,385,1/30,id,5,-35,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation2.png');
 
 addModel(id,5,-17,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/tBt82UaFuO0");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 

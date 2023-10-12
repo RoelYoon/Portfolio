@@ -210,7 +210,7 @@ addSprite(377,662,1/40,id,-5,-13,0,'https://roelyoon.github.io/Portfolio/Challen
 addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
 
 //exaplanation 1
-addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation1.png');
+addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');
 
 //explanation 2
 //addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation2.png');

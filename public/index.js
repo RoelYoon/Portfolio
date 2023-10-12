@@ -29,6 +29,14 @@ const material = new THREE.MeshStandardMaterial({
 });
 const mesh = new THREE.Mesh(geometry,material); 
 scene.add(mesh); */
+//load objects
+let models = [];
+let modelRotation = [];
+let modelSetRotation = [];
+let anim = [];
+let sceneYLock = [];
+let curScene = 0; 
+
 function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset,textureResource){
     const texture = new THREE.TextureLoader().load( textureResource ); 
     texture.colorSpace = THREE.SRGBColorSpace; 
@@ -38,18 +46,28 @@ function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset
     sprite.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
     scene.add( sprite );
 }
-//load objects
-let models = [];
-let modelRotation = [];
-let modelSetRotation = [];
-let anim = [];
-let sceneYLock = [];
-let curScene = 0; 
 
+const GLTFloader = new GLTFLoader();
+
+function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additionalAnim,rotate,modelResource){
+    GLTFloader.load( modelResource, function ( gltf ) {
+    gltf.scene.position.x=xMove*id + xOffset;
+    gltf.scene.position.y=yOffset;
+    gltf.scene.position.z=zMove*id + zOffset; 
+    gltf.scene.scale.set(scaleFactor,scaleFactor,scaleFactor);
+    rotate(gltf);
+    models.push(gltf.scene);
+    modelRotation.push(rotationAnim);
+    modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
+    anim.push(additionalAnim);
+    scene.add( gltf.scene );
+    })
+}
+let id = 0; 
 //scene 1
 sceneYLock.push(true); 
 //title
-const GLTFloader = new GLTFLoader();
+/*
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
 	gltf.scene.position.x-=9;
     gltf.scene.position.y+=4;
@@ -64,9 +82,13 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 }, undefined, function ( error ) {
 	console.error( error );
 } );
+*/
+addModel(id,-9,4,0,5,new THREE.Vector3(0,0,0),function(){},Math.PI/3,'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb');
+
+//scene 2
+id++;
 
 //color-changing panel
-let id = 1; 
 let panelColor = 0;
 let panelChange = 50;
 const panelGeometry = new THREE.BoxGeometry( 5, 5, 1 ); 

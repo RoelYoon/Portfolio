@@ -83,7 +83,7 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 	console.error( error );
 } );
 */
-addModel(id,-9,4,0,5,new THREE.Vector3(0,0,0),function(){},Math.PI/3,'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb');
+addModel(id,-9,4,0,5,new THREE.Vector3(0,0,0),function(){},function(gltf){gltf.scene.rotateX(Math.PI/3);},'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb');
 
 //scene 2
 id++;

@@ -216,7 +216,7 @@ addSprite(580,163,1/40,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenge
 addSprite(212,692,1/20,id,-6,-37,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/traverse.png');
 
 //explanation 2
-addSprite(580,385,1/30,id,5,-27,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation2.png');
+addSprite(580,385,1/50,id,5,-27,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation2.png');
 
 addModel(id,5,-60,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/tBt82UaFuO0");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 

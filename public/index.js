@@ -220,6 +220,25 @@ addSprite(448,692,1/50,id,5,-25.7,0,'https://roelyoon.github.io/Portfolio/Challe
 
 addModel(id,4.7,-37,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/tBt82UaFuO0");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
+//scene 5 Grid Map Spiral
+sceneYLock.push(false);
+id++;
+
+//programming challenge 3 title
+addSprite(422,54,1/20,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/title.png');
+
+//description 
+addSprite(580,102,1/25,id,0,-4,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
+
+//maincode sprite
+addSprite(422,404,1/40,id,-6.1,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
+
+//exaplanation 1
+addSprite(444,300,1/50,id,5,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');
+
+
+addModel(id,5,-20,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/qKD48ETBLVM");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);
 const titleTopLight = new THREE.PointLight(0xffffff,50000);

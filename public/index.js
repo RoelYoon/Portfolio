@@ -134,6 +134,8 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb', fu
 	console.error( error );
 } );
 
+
+
 sceneYLock.push(false);
 //programming challenge 1 title
 addSprite(1248,200,1/60,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/title.png');
@@ -185,8 +187,6 @@ addSprite(476,60,1/36,id,-6.5,-84,0,'https://roelyoon.github.io/Portfolio/Images
 //robot 1
 addSprite(476,338,1/20,id,0,-94,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot.jpeg');
 
-
-
 //robot 2
 addSprite(476,504,1/20,id,0,-120,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot bottom.jpeg');
 
@@ -199,6 +199,18 @@ addSprite(475,517,1/22,id,0,-180,0,'https://roelyoon.github.io/Portfolio/Images/
 //scene 4 number grid 
 sceneYLock.push(false);
 id++;
+
+//programming challenge 2 title
+addSprite(1248,200,1/60,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/title.png');
+
+//maincode sprite
+addSprite(377,662,1/40,id,-5,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
+
+//explanation 1
+addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
+
+//explanation 2
+addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
 
 
 

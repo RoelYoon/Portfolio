@@ -218,7 +218,7 @@ addSprite(212,692,1/20,id,-6.2,-36,0,'https://roelyoon.github.io/Portfolio/Chall
 //explanation 2
 addSprite(448,692,1/50,id,5,-25.8,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation2.png');
 
-addModel(id,5,-60,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/tBt82UaFuO0");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+addModel(id,5,-40,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/tBt82UaFuO0");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

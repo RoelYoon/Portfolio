@@ -204,13 +204,13 @@ id++;
 addSprite(422,54,1/20,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/title.png');
 
 //description 
-addSprite(580,102,1/25,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
+addSprite(580,102,1/25,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
 
 //maincode sprite
-addSprite(422,404,1/40,id,-5,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
+addSprite(422,404,1/40,id,-5,-11,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
 
 //exaplanation 1
-addSprite(580,163,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');
+addSprite(580,163,1/30,id,5,-7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');
 
 //traverse
 addSprite(212,692,1/20,id,-6,-40,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/traverse.png');

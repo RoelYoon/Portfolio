@@ -203,11 +203,11 @@ id++;
 //programming challenge 2 title
 addSprite(422,54,1/20,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/title.png');
 
+//description 
+addSprite(580,102,1/25,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
+
 //maincode sprite
 addSprite(422,404,1/40,id,-5,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
-
-//description 
-addSprite(580,102,1/20,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
 
 //exaplanation 1
 addSprite(580,163,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');

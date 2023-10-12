@@ -248,7 +248,7 @@ addSprite(568,419,1/50,id,-6,-45,0,'https://roelyoon.github.io/Portfolio/Challen
 //exaplanation 3
 addSprite(448,322,1/50,id,5,-45,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/explanation3.png');
 
-addModel(id,0,-53,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/qKD48ETBLVM");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+addModel(id,0,-54,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/qKD48ETBLVM");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

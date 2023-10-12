@@ -51,9 +51,9 @@ const GLTFloader = new GLTFLoader();
 
 function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additionalAnim,rotate,modelResource){
     GLTFloader.load( modelResource, function ( gltf ) {
-    gltf.scene.position.x=xMove*id + xOffset;
+    gltf.scene.position.x=moveX*id + xOffset;
     gltf.scene.position.y=yOffset;
-    gltf.scene.position.z=zMove*id + zOffset; 
+    gltf.scene.position.z=moveZ*id + zOffset; 
     gltf.scene.scale.set(scaleFactor,scaleFactor,scaleFactor);
     rotate(gltf);
     models.push(gltf.scene);

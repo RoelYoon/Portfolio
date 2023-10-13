@@ -217,7 +217,7 @@ addModel(id,-5,-208,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf
 addModel(id,5,-207,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/E9W1SYJOrHU");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //s11
-addSprite(568,125,1/21,id,0,-213,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s11.png');
+addSprite(568,125,1/21,id,0,-213.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s11.png');
 
 //scene 4 number grid 
 sceneYLock.push(false);

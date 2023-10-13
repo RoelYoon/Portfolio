@@ -188,19 +188,19 @@ addSprite(476,60,1/36,id,-6.5,-84,0,'https://roelyoon.github.io/Portfolio/Images
 addSprite(476,338,1/20,id,0,-94,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot.jpeg');
 
 //s6
-addSprite(568,67,1/20,id,0,-105,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s6.png');
+addSprite(568,67,1/21,id,0,-105,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s6.png');
 
 //robot 2
 addSprite(476,504,1/20,id,0,-120,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot bottom.jpeg');
 
 //s7
-addSprite(568,86,1/20,id,0,-135,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s7.png');
+addSprite(568,86,1/21,id,0,-135,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s7.png');
 
 //robot 3
 addSprite(476,504,1/20,id,0,-151,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot close.jpeg');
 
 //s8
-addSprite(568,67,1/20,id,0,-166,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s8.png');
+addSprite(568,67,1/21,id,0,-166,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s8.png');
 
 //robot code
 addSprite(475,517,1/20,id,0,-180,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robotCode.png');

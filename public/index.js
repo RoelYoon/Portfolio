@@ -203,7 +203,7 @@ addSprite(476,504,1/20,id,0,-151,0,'https://roelyoon.github.io/Portfolio/Images/
 addSprite(568,67,1/21,id,0,-166,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s8.png');
 
 //robot code
-addSprite(475,517,1/20,id,0,-182,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robotCode.png');
+addSprite(475,517,1/20,id,0,-181,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robotCode.png');
 
 //scene 4 number grid 
 sceneYLock.push(false);

@@ -206,7 +206,7 @@ addSprite(568,67,1/21,id,0,-166,0,'https://roelyoon.github.io/Portfolio/Images/U
 addSprite(475,517,1/20,id,0,-181,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robotCode.png');
 
 //s9
-addSprite(568,110,1/21,id,0,-192,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s9.png');
+addSprite(568,110,1/21,id,0,-196,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s9.png');
 
 
 //scene 4 number grid 

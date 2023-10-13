@@ -187,6 +187,9 @@ addSprite(476,60,1/36,id,-6.5,-84,0,'https://roelyoon.github.io/Portfolio/Images
 //robot 1
 addSprite(476,338,1/20,id,0,-94,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot.jpeg');
 
+//s6
+addSprite(568,67,1/20,id,0,-94,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/s6.png');
+
 //robot 2
 addSprite(476,504,1/20,id,0,-120,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/Robot/robot bottom.jpeg');
 

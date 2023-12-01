@@ -314,31 +314,19 @@ id++;
 
 //title
 addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/title.png');
-/*
+
 //maincode sprite
-addSprite(387,644,1/25,id,-6.1,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/main.png');
+addSprite(309,807,1/25,id,-6.1,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/code.png');
 
 //s1
-addSprite(669,373,1/45,id,6,-6.7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s1.png');
+addSprite(598,244,1/45,id,6,-6.7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s1.png');
 
 //s2
-addSprite(668,286,1/46,id,6,-17.6,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s2.png');
-
-//choose sprite
-addSprite(235,118,1/6.5,id,0,-37,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/choose.png');
-
-//pos sprite
-//addSprite(183,245,1/20,id,0,-35,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/pos.png');
+addSprite(628,266,1/46,id,6,-17.6,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s2.png');
 
 //s3
-addSprite(658,296,1/40,id,0,-51,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s3.png');
+addSprite(644,210,1/6.5,id,0,-37,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s3.png');
 
-//backtrack sprite
-addSprite(897,278,1/25,id,0,-61,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/backtrack.png');
-
-//s4
-addSprite(320,109,1/20,id,0,-70,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s4.png');
-*/
 //youtube
 addModel(id,0,-76,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/L-NNTbl6dmk");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 

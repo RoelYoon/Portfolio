@@ -325,7 +325,7 @@ addSprite(598,244,1/45,id,6,-6,0,'https://roelyoon.github.io/Portfolio/Challenge
 addSprite(628,266,1/46,id,6,-14,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s2.png');
 
 //s3
-addSprite(644,210,1/45,id,6,-16,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s3.png');
+addSprite(644,210,1/47,id,6,-18,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s3.png');
 
 //youtube
 addModel(id,0,-76,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/L-NNTbl6dmk");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');

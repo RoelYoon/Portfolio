@@ -288,7 +288,7 @@ addSprite(387,644,1/25,id,-6.1,-15,0,'https://roelyoon.github.io/Portfolio/Chall
 addSprite(669,373,1/45,id,6,-6.4,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s1.png');
 
 //s2
-addSprite(668,286,1/46,id,6,-18,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s2.png');
+addSprite(668,286,1/46,id,6,-17.8,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s2.png');
 
 //choose sprite
 addSprite(235,118,1/8,id,-3,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/choose.png');

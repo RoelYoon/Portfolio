@@ -300,13 +300,13 @@ addSprite(235,118,1/6.5,id,0,-37,0,'https://roelyoon.github.io/Portfolio/Challen
 addSprite(658,296,1/40,id,0,-51,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s3.png');
 
 //backtrack sprite
-addSprite(897,278,1/25,id,0,-62,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/backtrack.png');
+addSprite(897,278,1/25,id,0,-61,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/backtrack.png');
 
 //s4
 addSprite(320,109,1/20,id,0,-70,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s4.png');
 
 //youtube
-addModel(id,0,-73,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/nfkg8jZRXZ4");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+addModel(id,0,-75,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/nfkg8jZRXZ4");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

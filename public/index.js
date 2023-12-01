@@ -285,13 +285,13 @@ addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/
 addSprite(387,644,1/25,id,-6.1,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/main.png');
 
 //s1
-addSprite(669,373,1/45,id,6,-7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s1.png');
+addSprite(669,373,1/45,id,6,-6,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s1.png');
+
+//s2
+addSprite(668,286,1/45,id,6,-17,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s2.png');
 
 //choose sprite
 addSprite(235,118,1/8,id,-3,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/choose.png');
-
-//s2
-addSprite(668,286,1/40,id,3,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s2.png');
 
 //pos sprite
 addSprite(183,245,1/25,id,-6.1,-50,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/pos.png');

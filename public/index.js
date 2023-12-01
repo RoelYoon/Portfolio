@@ -300,7 +300,7 @@ addSprite(235,118,1/6.5,id,0,-37,0,'https://roelyoon.github.io/Portfolio/Challen
 addSprite(658,296,1/40,id,0,-51,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s3.png');
 
 //backtrack sprite
-addSprite(897,278,1/25,id,-6.1,-60,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/backtrack.png');
+addSprite(897,278,1/25,id,0,-65,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/backtrack.png');
 
 //s4
 addSprite(320,109,1/25,id,3,-60,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s4.png');

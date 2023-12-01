@@ -288,7 +288,7 @@ addSprite(387,644,1/25,id,-6.1,-13,0,'https://roelyoon.github.io/Portfolio/Chall
 addSprite(669,373,1/40,id,3,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s1.png');
 
 //choose sprite
-addSprite(235,118,1/10,id,-6.1,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/choose.png');
+addSprite(235,118,1/8,id,-3,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/choose.png');
 
 //s2
 addSprite(668,286,1/40,id,3,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s2.png');
@@ -303,7 +303,7 @@ addSprite(658,296,1/40,id,3,-50,0,'https://roelyoon.github.io/Portfolio/Challeng
 addSprite(897,278,1/25,id,-6.1,-60,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/backtrack.png');
 
 //s4
-addSprite(320,109,1/40,id,3,-60,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s4.png');
+addSprite(320,109,1/25,id,3,-60,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s4.png');
 
 //youtube
 addModel(id,0,-70,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/nfkg8jZRXZ4");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');

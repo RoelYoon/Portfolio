@@ -316,7 +316,7 @@ id++;
 addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/title.png');
 
 //maincode sprite
-addSprite(309,807,1/25,id,-6.1,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/code.png');
+addSprite(309,807,1/25,id,-5.7,-18,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/code.png');
 
 //s1
 addSprite(598,244,1/45,id,6,-6.7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s1.png');

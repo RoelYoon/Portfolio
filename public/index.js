@@ -282,10 +282,10 @@ id++;
 addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/title.png');
 
 //maincode sprite
-addSprite(387,644,1/25,id,-6.1,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/main.png');
+addSprite(387,644,1/25,id,-6.1,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/main.png');
 
 //s1
-addSprite(669,373,1/40,id,3,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s1.png');
+addSprite(669,373,1/30,id,5,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s1.png');
 
 //choose sprite
 addSprite(235,118,1/8,id,-3,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/choose.png');

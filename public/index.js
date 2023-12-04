@@ -35,8 +35,8 @@ let modelRotation = [];
 let modelSetRotation = [];
 let anim = [];
 let sceneYLock = [];
-let curScene = 0; 
 let zero = 6;
+let curScene = zero; 
 
 function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset,textureResource){
     const texture = new THREE.TextureLoader().load( textureResource ); 
@@ -390,10 +390,10 @@ function leftArrClick(){
         curScene--;
         targetCameraPos.x-=moveX; 
         targetCameraPos.y = 0; 
-        targetCameraPos.z-=moveZ; 
+        targetCameraPos.z-=id<=zero?-moveZ:moveZ;
         targetOrbitPos.x-=moveX; 
         targetOrbitPos.y = 0;
-        targetOrbitPos.z-=moveZ;
+        targetOrbitPos.z-=id<=zero?-moveZ:moveZ;
         lerpFrames=60;
     }
 }

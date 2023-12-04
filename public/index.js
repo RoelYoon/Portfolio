@@ -36,37 +36,19 @@ let modelSetRotation = [];
 let anim = [];
 let sceneYLock = [];
 let curScene = 0; 
+let zero = 6;
 
 function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset,textureResource){
     const texture = new THREE.TextureLoader().load( textureResource ); 
     texture.colorSpace = THREE.SRGBColorSpace; 
     const material = new THREE.SpriteMaterial( { map:  texture} );
     const sprite = new THREE.Sprite( material );
-    sprite.position.set(moveX*id+xOffset,0+yOffset,moveZ*id+zOffset);
+    sprite.position.set(moveX*id+xOffset,0+yOffset,moveZ*(id<=zero?(id-zero)*-1:id)+zOffset);
     sprite.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
     scene.add( sprite );
 }
 
 const GLTFloader = new GLTFLoader();
-
-function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additionalAnim,additionalFunc,modelResource){
-    GLTFloader.load( modelResource, function ( gltf ) {
-    gltf.scene.position.x=moveX*id + xOffset;
-    gltf.scene.position.y=yOffset;
-    gltf.scene.position.z=moveZ*id + zOffset; 
-    gltf.scene.scale.set(scaleFactor,scaleFactor,scaleFactor);
-    additionalFunc(gltf);
-    models.push(gltf.scene);
-    modelRotation.push(rotationAnim);
-    modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
-    anim.push(additionalAnim);
-    scene.add( gltf.scene );
-    })
-}
-let id = 0; 
-//scene 1 title 
-sceneYLock.push(true); 
-//title
 /*
 GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', function ( gltf ) {
 	gltf.scene.position.x-=9;
@@ -83,9 +65,146 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 	console.error( error );
 } );
 */
-addModel(id,-9,4,0,5,new THREE.Vector3(0,0,0),function(){},function(gltf){gltf.scene.rotateX(Math.PI/3);},'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb');
+function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additionalAnim,additionalFunc,modelResource){
+    GLTFloader.load( modelResource, function ( gltf ) {
+    gltf.scene.position.x=moveX*id + xOffset;
+    gltf.scene.position.y=yOffset;
+    gltf.scene.position.z=moveZ*(id<=zero?(id-zero)*-1:id) + zOffset; 
+    gltf.scene.scale.set(scaleFactor,scaleFactor,scaleFactor);
+    additionalFunc(gltf);
+    models.push(gltf.scene);
+    modelRotation.push(rotationAnim);
+    modelSetRotation.push(new THREE.Vector3(gltf.scene.rotation.x,gltf.scene.rotation.y,gltf.scene.rotation.z));
+    anim.push(additionalAnim);
+    scene.add( gltf.scene );
+    })
+}
+let id = 0; 
+//scene -6 coral
+sceneYLock.push(false);
+id++;
+//title
+addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/title.png');
 
-//scene 2 disk maze
+//maincode sprite
+addSprite(416,600,1/27,id,-6.1,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/main.png');
+
+//s1
+addSprite(557,448,1/43,id,6,-7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/s1.png');
+
+//youtube
+addModel(id,6,-18.5,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/c8x-gFHnKX8");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+//scene -5 disk transport
+sceneYLock.push(false);
+id++;
+//title
+addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/title.png');
+
+//maincode sprite
+addSprite(309,807,1/25,id,-6.5,-18,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/code.png');
+
+//s1
+addSprite(598,244,1/45,id,6,-7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s1.png');
+
+//s2
+addSprite(628,266,1/46,id,6,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s2.png');
+
+//s3
+addSprite(644,210,1/49,id,6,-19,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s3.png');
+
+//youtube
+addModel(id,6,-26.5,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/L-NNTbl6dmk");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+
+//scene -4 robot vacuum
+sceneYLock.push(false);
+id++;
+
+//title
+addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/title.png');
+
+//maincode sprite
+addSprite(387,644,1/25,id,-6.1,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/main.png');
+
+//s1
+addSprite(669,373,1/45,id,6,-6.7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s1.png');
+
+//s2
+addSprite(668,286,1/46,id,6,-17.6,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s2.png');
+
+//choose sprite
+addSprite(235,118,1/6.5,id,0,-37,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/choose.png');
+
+//pos sprite
+//addSprite(183,245,1/20,id,0,-35,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/pos.png');
+
+//s3
+addSprite(658,296,1/40,id,0,-51,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s3.png');
+
+//backtrack sprite
+addSprite(897,278,1/25,id,0,-61,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/backtrack.png');
+
+//s4
+addSprite(320,109,1/20,id,0,-70,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s4.png');
+
+//youtube
+addModel(id,0,-76,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/nfkg8jZRXZ4");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+
+//scene -3 number grid 
+sceneYLock.push(false);
+id++;
+
+// title
+addSprite(422,54,1/20,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/title.png');
+
+//description 
+addSprite(580,102,1/25,id,0,-4,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
+
+//maincode sprite
+addSprite(422,404,1/40,id,-6.1,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
+
+//exaplanation 1
+addSprite(444,300,1/50,id,5,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');
+
+//traverse
+addSprite(212,692,1/20,id,-6.3,-36,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/traverse.png');
+
+//explanation 2
+addSprite(448,692,1/50,id,5,-25.7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation2.png');
+
+addModel(id,4.7,-37,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/tBt82UaFuO0");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+
+
+//scene -2 Grid Map Spiral
+sceneYLock.push(false);
+id++;
+
+//programming challenge 3 title
+addSprite(568,111,1/30,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/title.png');
+
+//description 
+addSprite(568,62,1/25,id,0,-4,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/description.png');
+
+//maincode sprite
+addSprite(506,664,1/50,id,-6.1,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/main.png');
+
+//exaplanation 1
+addSprite(446,148,1/50,id,5,-11,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/explanation.png');
+
+//drawSpiral() sprite
+addSprite(362,692,1/40,id,-6,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/drawSpiral.png');
+
+//exaplanation 2
+addSprite(458,624,1/50,id,5,-27.2,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/explanation2.png');
+
+//drawLayer() sprite
+addSprite(568,419,1/50,id,-6,-45,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/drawLayer.png');
+
+//exaplanation 3
+addSprite(448,322,1/50,id,5,-45,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/explanation3.png');
+
+addModel(id,0,-54,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/qKD48ETBLVM");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+
+//scene -1 disk maze
 id++;
 
 //color-changing panel
@@ -149,7 +268,13 @@ addSprite(1162,214,1/60,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Challeng
 //explanation
 addSprite(688,514,1/60,id,5,-9,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 1/explanation.png');
 
-//scene 3 clawbot
+//scene 0 port-title
+id++;
+sceneYLock.push(true); 
+addModel(id,-9,4,0,5,new THREE.Vector3(0,0,0),function(){},function(gltf){gltf.scene.rotateX(Math.PI/3);},'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb');
+
+
+//scene 1 clawbot
 sceneYLock.push(false);
 id++;
 
@@ -219,133 +344,8 @@ addModel(id,5,-207,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf
 //s11
 addSprite(568,125,1/21,id,0,-213.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s11.png');
 
-//scene 4 number grid 
-sceneYLock.push(false);
-id++;
 
-//programming challenge 2 title
-addSprite(422,54,1/20,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/title.png');
-
-//description 
-addSprite(580,102,1/25,id,0,-4,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/description.png');
-
-//maincode sprite
-addSprite(422,404,1/40,id,-6.1,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/main.png');
-
-//exaplanation 1
-addSprite(444,300,1/50,id,5,-12,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation.png');
-
-//traverse
-addSprite(212,692,1/20,id,-6.3,-36,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/traverse.png');
-
-//explanation 2
-addSprite(448,692,1/50,id,5,-25.7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 2/explanation2.png');
-
-addModel(id,4.7,-37,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/tBt82UaFuO0");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
-
-
-//scene 5 Grid Map Spiral
-sceneYLock.push(false);
-id++;
-
-//programming challenge 3 title
-addSprite(568,111,1/30,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/title.png');
-
-//description 
-addSprite(568,62,1/25,id,0,-4,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/description.png');
-
-//maincode sprite
-addSprite(506,664,1/50,id,-6.1,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/main.png');
-
-//exaplanation 1
-addSprite(446,148,1/50,id,5,-11,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/explanation.png');
-
-//drawSpiral() sprite
-addSprite(362,692,1/40,id,-6,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/drawSpiral.png');
-
-//exaplanation 2
-addSprite(458,624,1/50,id,5,-27.2,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/explanation2.png');
-
-//drawLayer() sprite
-addSprite(568,419,1/50,id,-6,-45,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/drawLayer.png');
-
-//exaplanation 3
-addSprite(448,322,1/50,id,5,-45,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 3/explanation3.png');
-
-addModel(id,0,-54,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/qKD48ETBLVM");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
-
-//scene 6 
-sceneYLock.push(false);
-id++;
-
-//title
-addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/title.png');
-
-//maincode sprite
-addSprite(387,644,1/25,id,-6.1,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/main.png');
-
-//s1
-addSprite(669,373,1/45,id,6,-6.7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s1.png');
-
-//s2
-addSprite(668,286,1/46,id,6,-17.6,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s2.png');
-
-//choose sprite
-addSprite(235,118,1/6.5,id,0,-37,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/choose.png');
-
-//pos sprite
-//addSprite(183,245,1/20,id,0,-35,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/pos.png');
-
-//s3
-addSprite(658,296,1/40,id,0,-51,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s3.png');
-
-//backtrack sprite
-addSprite(897,278,1/25,id,0,-61,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/backtrack.png');
-
-//s4
-addSprite(320,109,1/20,id,0,-70,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 4/s4.png');
-
-//youtube
-addModel(id,0,-76,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/nfkg8jZRXZ4");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
-
-//scene 7
-sceneYLock.push(false);
-id++;
-
-//title
-addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/title.png');
-
-//maincode sprite
-addSprite(309,807,1/25,id,-6.5,-18,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/code.png');
-
-//s1
-addSprite(598,244,1/45,id,6,-7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s1.png');
-
-//s2
-addSprite(628,266,1/46,id,6,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s2.png');
-
-//s3
-addSprite(644,210,1/49,id,6,-19,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 5/s3.png');
-
-//youtube
-addModel(id,6,-26.5,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/L-NNTbl6dmk");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
-
-//scene 8
-sceneYLock.push(false);
-id++;
-
-//title
-addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/title.png');
-
-//maincode sprite
-addSprite(416,600,1/27,id,-6.1,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/main.png');
-
-//s1
-addSprite(557,448,1/43,id,6,-7,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/s1.png');
-
-//youtube
-addModel(id,6,-18.5,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/c8x-gFHnKX8");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
-
+id=zero;
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);
 const titleTopLight = new THREE.PointLight(0xffffff,50000);
@@ -404,10 +404,10 @@ function rightArrClick(){
         curScene++;
         targetCameraPos.x+=moveX;
         targetCameraPos.y = 0; 
-        targetCameraPos.z+=moveZ;
+        targetCameraPos.z+=id<=zero?-moveZ:moveZ;
         targetOrbitPos.x+=moveX;
         targetOrbitPos.y = 0;
-        targetOrbitPos.z+=moveZ; 
+        targetOrbitPos.z+=id<=zero?-moveZ:moveZ; 
         lerpFrames=60;
     }
 }

@@ -358,7 +358,9 @@ id++;
 //title
 addSprite(472,102,1/26,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/title.png');
 
-addModel(id,0,-5,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://wuling.id/en/blog/autotips/all-about-car-gears-from-definition-to-functions");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addModel(id,-5,-5,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://ilovebicycling.com/how-to-use-bike-gears/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+
+addModel(id,5,-5,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://wuling.id/en/blog/autotips/all-about-car-gears-from-definition-to-functions");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //video
 addModel(id,0,-10,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtube.com/shorts/ffFYDlkwsvE");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');

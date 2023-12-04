@@ -400,6 +400,7 @@ function leftArrClick(){
     }
 }
 function rightArrClick(){
+    console.log(curScene);
     if(curScene!=id){
         curScene++;
         targetCameraPos.x+=moveX;

@@ -351,9 +351,13 @@ sceneYLock.push(false);
 id++;
 
 //title
-
+//gear video https://youtube.com/shorts/ffFYDlkwsvE
+addModel(id,0,0,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtube.com/shorts/ffFYDlkwsvE");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //scene 3 6 bar arm
+sceneYLock.push(false);
+id++;
+addModel(id,0,0,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 //https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view
 
 //light

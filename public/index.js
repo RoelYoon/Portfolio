@@ -82,7 +82,6 @@ function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additional
 let id = 0; 
 //scene -6 coral
 sceneYLock.push(false);
-id++;
 //title
 addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/title.png');
 
@@ -343,7 +342,6 @@ addModel(id,5,-207,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf
 
 //s11
 addSprite(568,125,1/21,id,0,-213.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s11.png');
-
 
 id=zero;
 //light

@@ -99,7 +99,7 @@ addModel(id,6,-18.5,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(glt
 
 //certificate
 
-addSprite(968,681,1/30,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/certificate.png');
+addSprite(968,681,1/30,id,0,-40,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/certificate.png');
 
 //scene -5 disk transport
 sceneYLock.push(false);

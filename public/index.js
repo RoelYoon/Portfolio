@@ -346,6 +346,16 @@ addModel(id,5,-207,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf
 //s11
 addSprite(568,125,1/21,id,0,-213.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s11.png');
 
+//scene 2 intro gears
+sceneYLock.push(false);
+id++;
+
+//title
+
+
+//scene 3 6 bar arm
+//https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view
+
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);
 const titleTopLight = new THREE.PointLight(0xffffff,50000);

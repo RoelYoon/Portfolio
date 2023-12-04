@@ -407,7 +407,7 @@ function rightArrClick(){
         targetCameraPos.z-=id<zero?moveZ*-1:moveZ*-1;
         targetOrbitPos.x+=moveX;
         targetOrbitPos.y = 0;
-        targetOrbitPos.z-=id<zero?moveZ:mozeZ*-1
+        targetOrbitPos.z-=id<zero?moveZ:moveZ*-1
         lerpFrames=60;
     }
 }

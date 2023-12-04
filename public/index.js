@@ -43,7 +43,7 @@ function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset
     texture.colorSpace = THREE.SRGBColorSpace; 
     const material = new THREE.SpriteMaterial( { map:  texture} );
     const sprite = new THREE.Sprite( material );
-    sprite.position.set(moveX*id+xOffset,0+yOffset,moveZ*(id<=zero?(id-zero)*-1:id)+zOffset);
+    sprite.position.set(moveX*id+xOffset,0+yOffset,moveZ*(id<=zero?(id*-1-zero)*-1:id)+zOffset);
     sprite.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
     scene.add( sprite );
 }
@@ -69,7 +69,7 @@ function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additional
     GLTFloader.load( modelResource, function ( gltf ) {
     gltf.scene.position.x=moveX*id + xOffset;
     gltf.scene.position.y=yOffset;
-    gltf.scene.position.z=moveZ*(id<=zero?(id-zero)*-1:id) + zOffset; 
+    gltf.scene.position.z=moveZ*(id<=zero?(id*-1-zero)*-1:id) + zOffset; 
     gltf.scene.scale.set(scaleFactor,scaleFactor,scaleFactor);
     additionalFunc(gltf);
     models.push(gltf.scene);

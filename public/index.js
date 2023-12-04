@@ -96,6 +96,11 @@ addSprite(557,448,1/43,id,6,-7,0,'https://roelyoon.github.io/Portfolio/Challenge
 
 //youtube
 addModel(id,6,-18.5,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/c8x-gFHnKX8");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+
+//certificate
+
+addSprite(968,681,1/60,id,0,-13,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/certificate.png');
+
 //scene -5 disk transport
 sceneYLock.push(false);
 id++;

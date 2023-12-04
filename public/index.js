@@ -46,7 +46,7 @@ function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset
     texture.colorSpace = THREE.SRGBColorSpace; 
     const material = new THREE.SpriteMaterial( { map:  texture} );
     const sprite = new THREE.Sprite( material );
-    sprite.position.set(moveX*(id<=zero?-1*abs(id-zero):abs(id-zero))+xOffset,0+yOffset,moveZ*(id<=zero?-1*abs(id-zero):abs(id-zero))+zOffset);
+    sprite.position.set(moveX*(id<=zero?-1*abs(id-zero):abs(id-zero))+xOffset,0+yOffset,moveZ*(id<=zero?abs(id-zero):abs(id-zero))+zOffset);
     sprite.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
     scene.add( sprite );
 }
@@ -72,7 +72,7 @@ function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additional
     GLTFloader.load( modelResource, function ( gltf ) {
     gltf.scene.position.x=moveX*(id<=zero?-1*abs(id-zero):abs(id-zero)) + xOffset;
     gltf.scene.position.y=yOffset;
-    gltf.scene.position.z=moveZ*(id<=zero?-1*abs(id-zero):abs(id-zero)) + zOffset; 
+    gltf.scene.position.z=moveZ*(id<=zero?abs(id-zero):abs(id-zero)) + zOffset; 
     gltf.scene.scale.set(scaleFactor,scaleFactor,scaleFactor);
     additionalFunc(gltf);
     models.push(gltf.scene);
@@ -346,7 +346,6 @@ addModel(id,5,-207,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf
 //s11
 addSprite(568,125,1/21,id,0,-213.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 1/s11.png');
 
-id=zero;
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);
 const titleTopLight = new THREE.PointLight(0xffffff,50000);

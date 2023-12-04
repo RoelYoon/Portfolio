@@ -359,14 +359,14 @@ id++;
 addSprite(472,102,1/26,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/title.png');
 
 //video
-addModel(id,0,-10,0,1/26,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtube.com/shorts/ffFYDlkwsvE");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+addModel(id,0,-10,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtube.com/shorts/ffFYDlkwsvE");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //scene 3 6 bar arm
 sceneYLock.push(false);
 id++;
 
 //title
-addSprite(402,110,1/30,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/title.png');
+addSprite(402,110,1/26,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/title.png');
 
 //video
 addModel(id,0,-10,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');

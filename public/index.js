@@ -392,10 +392,10 @@ function leftArrClick(){
         curScene--;
         targetCameraPos.x-=moveX; 
         targetCameraPos.y = 0; 
-        targetCameraPos.z+=curScene<=zero?moveZ:moveZ*-1;
+        targetCameraPos.z+=curScene<=zero?moveZ:moveZ;
         targetOrbitPos.x-=moveX; 
         targetOrbitPos.y = 0;
-        targetOrbitPos.z+=curScene<=zero?moveZ:moveZ*-1;
+        targetOrbitPos.z+=curScene<=zero?moveZ:moveZ;
         lerpFrames=60;
     }
 }

@@ -2,6 +2,9 @@ import * as THREE from "/three";
 import {OrbitControls} from "/three/examples/jsm/controls/OrbitControls.js";
 import { GLTFLoader } from '/three/examples/jsm/loaders/GLTFLoader.js';
 import {Interaction} from './interaction.js';
+function abs(n){
+    return n<0?-1*n:n;
+}
 const scene = new THREE.Scene(); 
 const moveX=80; const moveZ=100;
 const sizes = {

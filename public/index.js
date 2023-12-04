@@ -38,7 +38,7 @@ let modelRotation = [];
 let modelSetRotation = [];
 let anim = [];
 let sceneYLock = [];
-let zero = 5;
+let zero = 6;
 let curScene = zero; 
 
 function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset,textureResource){

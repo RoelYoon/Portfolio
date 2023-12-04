@@ -43,7 +43,7 @@ function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset
     texture.colorSpace = THREE.SRGBColorSpace; 
     const material = new THREE.SpriteMaterial( { map:  texture} );
     const sprite = new THREE.Sprite( material );
-    sprite.position.set(moveX*id+xOffset,0+yOffset,moveZ*(id<=zero?(id*-1-zero)*-1:id)+zOffset);
+    sprite.position.set(moveX*(id<=zero?-1*abs(id-zero):abs(id-zero))+xOffset,0+yOffset,moveZ*(id<=zero?-1*abs(id-zero):abs(id-zero))+zOffset);
     sprite.scale.set(ratioWidth*scaleFactor,ratioHeight*scaleFactor,1);
     scene.add( sprite );
 }
@@ -67,9 +67,9 @@ GLTFloader.load( 'https://roelyoon.github.io/Portfolio/3DModels/portTitle.glb', 
 */
 function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additionalAnim,additionalFunc,modelResource){
     GLTFloader.load( modelResource, function ( gltf ) {
-    gltf.scene.position.x=moveX*id + xOffset;
+    gltf.scene.position.x=moveX*(id<=zero?-1*abs(id-zero):abs(id-zero)) + xOffset;
     gltf.scene.position.y=yOffset;
-    gltf.scene.position.z=moveZ*(id<=zero?(id*-1-zero)*-1:id) + zOffset; 
+    gltf.scene.position.z=moveZ*(id<=zero?-1*abs(id-zero):abs(id-zero)) + zOffset; 
     gltf.scene.scale.set(scaleFactor,scaleFactor,scaleFactor);
     additionalFunc(gltf);
     models.push(gltf.scene);

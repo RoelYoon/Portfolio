@@ -401,10 +401,10 @@ addSprite(377,136,1/18,id,0,-15.5,0,'https://roelyoon.github.io/Portfolio/Images
 addSprite(729,99,1/28,id,0,-22,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s3.png');
 
 //top img
-addSprite(243,334,1/14,id,0,-40,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/top.png');
+addSprite(243,334,1/14,id,0,-38,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/top.png');
 
 //side img
-addSprite(729,452,1/25,id,0,-65,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/side.png');
+addSprite(729,452,1/25,id,0,-63,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/side.png');
 
 //close img
 addSprite(3,4,6,id,0,-85,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');

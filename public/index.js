@@ -398,7 +398,7 @@ addSprite(966,106,1/30,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Images/U
 addSprite(377,136,1/20,id,0,-25,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/bar.png');
 
 //close img
-addSprite(3,4,1,id,0,-55,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');
+addSprite(3,4,3,id,0,-55,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');
 
 //video
 addModel(id,0,-70,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');

@@ -389,13 +389,13 @@ id++;
 addSprite(402,110,1/26,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/title.png');
 
 //s1
-addSprite(988,192,1/37,id,0,-7,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s1.png')
+addSprite(988,192,1/37,id,0,-3,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s1.png')
 
 //s2
-addSprite(966,106,1/37,id,0,-11,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s2.png');
+addSprite(966,106,1/37,id,0,-7,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s2.png');
 
 //bar image
-addSprite(377,136,1/18,id,0,-17,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/bar.png');
+addSprite(377,136,1/18,id,0,-13.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/bar.png');
 
 //s3
 

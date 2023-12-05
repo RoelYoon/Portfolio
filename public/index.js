@@ -398,13 +398,18 @@ addSprite(966,106,1/37,id,0,-9,0,'https://roelyoon.github.io/Portfolio/Images/Un
 addSprite(377,136,1/18,id,0,-15.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/bar.png');
 
 //s3
-addSprite(729,99,1/28,id,0,-21,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s3.png');
+addSprite(729,99,1/28,id,0,-22,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s3.png');
 
 //close img
 addSprite(3,4,6,id,0,-55,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');
 
+addSprite(3,4,6,id,0,-55,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');
+
+//source
+addModel(id,-5,-70,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://kb.vex.com/hc/en-us/articles/360037389012-Building-V5-Robot-Arms");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+
 //video
-addModel(id,0,-70,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+addModel(id,5,-70,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

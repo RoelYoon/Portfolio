@@ -368,7 +368,7 @@ addSprite(56,34,1/2,id,0,-24.5,0,'https://roelyoon.github.io/Portfolio/Images/Un
 addSprite(790,316,1/31,id,0,-39,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s2.png');
 
 //car
-addSprite(72,41,1/2.4,id,0,-57,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/car.jpeg');
+addSprite(72,41,1/2.5,id,0,-55,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/car.jpeg');
 
 //s3
 addSprite(783,319,1/32,id,0,-70,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s3.png');

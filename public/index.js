@@ -398,6 +398,7 @@ addSprite(966,106,1/37,id,0,-9,0,'https://roelyoon.github.io/Portfolio/Images/Un
 addSprite(377,136,1/18,id,0,-15.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/bar.png');
 
 //s3
+addSprite(729,99,1/30,id,0,-15.5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s3.png');
 
 //close img
 addSprite(3,4,6,id,0,-55,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');

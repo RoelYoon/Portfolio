@@ -407,7 +407,7 @@ addSprite(243,334,1/14,id,0,-38,0,'https://roelyoon.github.io/Portfolio/Images/U
 addSprite(729,452,1/25,id,0,-62,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/side.png');
 
 //close img
-addSprite(3,4,6,id,0,-85,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');
+addSprite(3,4,6,id,0,-86,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');
 
 //source
 addModel(id,-5,-105,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://kb.vex.com/hc/en-us/articles/360037389012-Building-V5-Robot-Arms");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');

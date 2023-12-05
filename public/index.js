@@ -362,13 +362,13 @@ addSprite(472,102,1/26,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Uni
 addSprite(696,358,1/28,id,0,-9,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s1.png');
 
 //bike
-addSprite(56,34,2,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/bike.jpeg');
+addSprite(56,34,1/30,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/bike.jpeg');
 
 //s2
 addSprite(790,316,1/31,id,0,-39,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s2.png');
 
 //car
-addSprite(72,41,1.8,id,0,-45,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/car.jpeg');
+addSprite(72,41,1/30,id,0,-45,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/car.jpeg');
 
 //s3
 addSprite(783,319,1/32,id,0,-79,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s3.png');

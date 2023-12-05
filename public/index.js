@@ -368,18 +368,18 @@ addSprite(56,34,1/2,id,0,-24.5,0,'https://roelyoon.github.io/Portfolio/Images/Un
 addSprite(790,316,1/31,id,0,-39,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s2.png');
 
 //car
-addSprite(72,41,1/2.4,id,0,-60,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/car.jpeg');
+addSprite(72,41,1/2.4,id,0,-57,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/car.jpeg');
 
 //s3
-addSprite(783,319,1/32,id,0,-79,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s3.png');
+addSprite(783,319,1/32,id,0,-70,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s3.png');
 
 //source 1
-addModel(id,-5,-89,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://ilovebicycling.com/how-to-use-bike-gears/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addModel(id,-5,-79,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://ilovebicycling.com/how-to-use-bike-gears/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 //soruce 2
-addModel(id,5,-89,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://wuling.id/en/blog/autotips/all-about-car-gears-from-definition-to-functions");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addModel(id,5,-79,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://wuling.id/en/blog/autotips/all-about-car-gears-from-definition-to-functions");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //video
-addModel(id,0,-94,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtube.com/shorts/ffFYDlkwsvE");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+addModel(id,0,-84,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtube.com/shorts/ffFYDlkwsvE");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //scene 3 6 bar arm
 sceneYLock.push(false);

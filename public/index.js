@@ -437,8 +437,8 @@ addModel(id,-5,-189,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf
 addModel(id,5,-189,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://pros.cs.purdue.edu/v5/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //extra media
-addSprite(532,86,1/33,id,-5,-192,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s8.png');
-addModel(id,7,-192,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/drive/folders/1EtHpaarBqEKeAAl05oCAf-ux1Ii6-o6K?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addSprite(532,86,1/33,id,-5,-194,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s8.png');
+addModel(id,7,-194.2,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/drive/folders/1EtHpaarBqEKeAAl05oCAf-ux1Ii6-o6K?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 
 //light

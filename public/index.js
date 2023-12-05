@@ -416,7 +416,7 @@ addSprite(675,370,1/28,id,0,-105.5,0,'https://roelyoon.github.io/Portfolio/Image
 addModel(id,0,-115.5,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //code
-addSprite(347,527,1/28,id,0,-130,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s4.png');
+addSprite(347,527,1/28,id,0,-130,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/code.png');
 
 //s5
 addSprite(729,180,1/28,id,0,-150,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s5.png');

@@ -388,6 +388,18 @@ id++;
 //title
 addSprite(402,110,1/26,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/title.png');
 
+//s1
+addSprite(988,192,1/30,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s1.png')
+
+//s2
+addSprite(966,106,1/30,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s2.png');
+
+//bar image
+addSprite(377,136,1/20,id,0,-25,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/bar.png');
+
+//close img
+//addSprite(966,106,1/30,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');
+
 //video
 addModel(id,0,-10,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 

@@ -379,7 +379,7 @@ addModel(id,-5,-76,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf)
 addModel(id,5,-76,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://wuling.id/en/blog/autotips/all-about-car-gears-from-definition-to-functions");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //video
-addModel(id,0,-82,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtube.com/shorts/ffFYDlkwsvE");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+addModel(id,0,-81.5,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtube.com/shorts/ffFYDlkwsvE");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //scene 3 6 bar arm
 sceneYLock.push(false);

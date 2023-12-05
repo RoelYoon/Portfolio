@@ -422,19 +422,19 @@ addSprite(347,527,1/22,id,0,-133,0,'https://roelyoon.github.io/Portfolio/Images/
 addSprite(729,180,1/28,id,0,-150,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s5.png');
 
 //s6
-addSprite(729,212,1/28,id,0,-155,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s6.png');
+addSprite(729,212,1/28,id,0,-158,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s6.png');
 
 //fixed img
-addSprite(567,440,1/28,id,0,-165,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/next.png');
+addSprite(567,440,1/28,id,0,-170,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/next.png');
 
 //s7
-addSprite(729,155,1/28,id,0,-175,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s7.png');
+addSprite(729,155,1/28,id,0,-182,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s7.png');
 
 //source
-addModel(id,-5,-208,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://kb.vex.com/hc/en-us/articles/360037389012-Building-V5-Robot-Arms");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addModel(id,-5,-185,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://kb.vex.com/hc/en-us/articles/360037389012-Building-V5-Robot-Arms");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //pros
-addModel(id,5,-208,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://pros.cs.purdue.edu/v5/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addModel(id,5,-185,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://pros.cs.purdue.edu/v5/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

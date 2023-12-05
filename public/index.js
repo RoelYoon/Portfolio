@@ -401,19 +401,19 @@ addSprite(377,136,1/18,id,0,-15.5,0,'https://roelyoon.github.io/Portfolio/Images
 addSprite(729,99,1/28,id,0,-22,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s3.png');
 
 //top img
-addSprite(243,334,1/25,id,0,-40,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/top.png');
+addSprite(243,334,1/18,id,0,-40,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/top.png');
 
 //side img
-addSprite(729,452,1/30,id,0,-55,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/side.png');
+addSprite(729,452,1/25,id,0,-65,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/side.png');
 
 //close img
-addSprite(3,4,6,id,0,-65,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');
+addSprite(3,4,6,id,0,-85,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/close.png');
 
 //source
-addModel(id,-5,-75,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://kb.vex.com/hc/en-us/articles/360037389012-Building-V5-Robot-Arms");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addModel(id,-5,-95,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://kb.vex.com/hc/en-us/articles/360037389012-Building-V5-Robot-Arms");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //video
-addModel(id,5,-76,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+addModel(id,5,-95,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/1soxKbMkDJD1lcj4JveznaTjcGZP-4ZD6/view");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

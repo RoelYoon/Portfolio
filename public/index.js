@@ -356,12 +356,21 @@ sceneYLock.push(false);
 id++;
 
 //title
-
 addSprite(472,102,1/26,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/title.png');
 
-addModel(id,-5,-5,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://ilovebicycling.com/how-to-use-bike-gears/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+//s1
+addSprite(696,358,1/30,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s1.png');
 
-addModel(id,5,-5,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://wuling.id/en/blog/autotips/all-about-car-gears-from-definition-to-functions");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+//s2
+addSprite(790,316,1/30,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s2.png');
+
+//s3
+addSprite(783,319,1/30,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Introduction/s3.png');
+
+//source 1
+addModel(id,-5,-20,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://ilovebicycling.com/how-to-use-bike-gears/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+//soruce 2
+addModel(id,5,-20,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://wuling.id/en/blog/autotips/all-about-car-gears-from-definition-to-functions");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //video
 addModel(id,0,-10,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtube.com/shorts/ffFYDlkwsvE");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');

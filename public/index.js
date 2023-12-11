@@ -440,6 +440,15 @@ addModel(id,5,-189,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf)
 addSprite(532,86,1/35,id,0,-194,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/6-Bar/s8.png');
 addModel(id,0,-201,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/drive/folders/1EtHpaarBqEKeAAl05oCAf-ux1Ii6-o6K?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
+//scene 4 autonomous delivery
+sceneYLock.push(false);
+id++;
+
+//title
+addSprite(544,196,1/28,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Delivery/title.png');
+
+//link sprite
+addModel(id,0,-5,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/drive/folders/1EtHpaarBqEKeAAl05oCAf-ux1Ii6-o6K?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

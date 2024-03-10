@@ -105,7 +105,7 @@ addSprite(535,234,1/25,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challeng
 
 //scene -6 coral
 sceneYLock.push(false);
-it++;
+id++;
 
 //title
 addSprite(438,85,1/25,id,0,0,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 6/title.png');

@@ -83,6 +83,25 @@ function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additional
     })
 }
 let id = 0; 
+
+//scene -8 castle crasher
+sceneYLock.push(false);
+//title
+
+//maincode sprite
+
+//scene -7 castle crasher
+sceneYLock.push(false);
+
+//maincode sprite
+addSprite(395,632,1/25,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/main.png');
+
+//move sprite
+addSprite(535,95,1/25,id,0,-20,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/move.png');
+
+//full sprite
+addSprite(535,234,1/25,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/full.png');
+
 //scene -6 coral
 sceneYLock.push(false);
 //title

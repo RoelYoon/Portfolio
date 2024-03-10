@@ -92,6 +92,7 @@ sceneYLock.push(false);
 
 //scene -7 castle crasher
 sceneYLock.push(false);
+id++;
 
 //maincode sprite
 addSprite(395,632,1/25,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/main.png');

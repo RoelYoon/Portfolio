@@ -496,6 +496,10 @@ addSprite(544,196,1/28,id,0,0,0,'https://roelyoon.github.io/Portfolio/Images/Uni
 //s1
 addSprite(566,94,1/28,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Images/Unit 2/Delivery/s1.png');
 
+
+//link sprite
+addModel(id,0,-11,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://docs.google.com/presentation/d/15ty9tlpOofBx4aZwlhjmeZ4wjSpObLwOO3J-z-2RqkM/edit?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+
 //scene 5 arcade game
 sceneYLock.push(false);
 id++;

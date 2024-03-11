@@ -92,10 +92,10 @@ sceneYLock.push(false);
 addSprite(277,899,1/25,id,-10,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/main.png');
 
 //move sprite
-addSprite(535,283,1/25,id,5,-20,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/move.png');
+addSprite(535,283,1/25,id,5,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/move.png');
 
-//full sprite
-addSprite(445,561,1/15,id,0,-50,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/full.png');
+//color sprite
+addSprite(410,529,1/25,id,0,-15,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/color.png');
 
 //youtube
 addModel(id,0,-75,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/a9YWQslez_4");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');

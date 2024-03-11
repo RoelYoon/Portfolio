@@ -110,13 +110,13 @@ id++;
 //title
 
 //maincode sprite
-addSprite(395,632,1/25,id,-5,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/main.png');
+addSprite(395,632,1/25,id,-6,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/main.png');
 
 //move sprite
-addSprite(535,95,1/20,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/move.png');
+addSprite(535,95,1/15,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/move.png');
 
 //turn sprite
-addSprite(324,532,1/25,id,5,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/turn.png');
+addSprite(324,532,1/25,id,6,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/turn.png');
 
 //print sprite
 addSprite(426,536,1/25,id,0,-40,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/print.png');

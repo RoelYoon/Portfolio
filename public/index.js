@@ -119,10 +119,10 @@ addSprite(535,95,1/15,id,0,-27,0,'https://roelyoon.github.io/Portfolio/Challenge
 addSprite(324,532,1/25,id,7,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/turn.png');
 
 //print sprite
-addSprite(426,536,1/25,id,-9,-42,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/print.png');
+addSprite(426,536,1/25,id,-10,-42,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/print.png');
 
 //auto sprite
-addSprite(526,474,1/25,id,8,-45,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/auto.png');
+addSprite(526,474,1/25,id,8,-48,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/auto.png');
 
 //youtube
 addModel(id,0,-75,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/C0RLwcDUZ2o");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');

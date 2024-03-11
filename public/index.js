@@ -98,10 +98,10 @@ addSprite(535,283,1/25,id,5,0,0,'https://roelyoon.github.io/Portfolio/Challenges
 addSprite(410,529,1/30,id,5,-17,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/color.png');
 
 //initial sprite
-addSprite(540,514,1/25,id,5,-25,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/initial.png');
+addSprite(540,514,1/25,id,0,-35,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/initial.png');
 
 //youtube
-addModel(id,0,-45,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/a9YWQslez_4");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+addModel(id,0,-55,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/a9YWQslez_4");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //scene -7 castle crasher
 sceneYLock.push(false);

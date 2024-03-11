@@ -92,10 +92,10 @@ sceneYLock.push(false);
 addSprite(277,899,1/25,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/main.png');
 
 //move sprite
-addSprite(535,283,1/25,id,0,-20,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/move.png');
+addSprite(535,283,1/25,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/move.png');
 
 //full sprite
-addSprite(445,561,1/25,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/full.png');
+addSprite(445,561,1/25,id,0,-70,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/full.png');
 
 //scene -7 castle crasher
 sceneYLock.push(false);

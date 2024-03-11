@@ -115,8 +115,17 @@ addSprite(395,632,1/25,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Challeng
 //move sprite
 addSprite(535,95,1/25,id,0,-20,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/move.png');
 
-//full sprite
-addSprite(535,234,1/25,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/full.png');
+//turn sprite
+addSprite(324,532,1/25,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/turn.png');
+
+//print sprite
+addSprite(426,536,1/25,id,0,-40,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/print.png');
+
+//auto sprite
+addSprite(526,474,1/25,id,0,-50,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/auto.png');
+
+//youtube
+addModel(id,0,-75,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/C0RLwcDUZ2o");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
 
 //scene -6 coral
 sceneYLock.push(false);

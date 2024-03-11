@@ -89,10 +89,19 @@ sceneYLock.push(false);
 //title
 
 //maincode sprite
+addSprite(277,899,1/25,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/main.png');
+
+//move sprite
+addSprite(535,283,1/25,id,0,-20,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/move.png');
+
+//full sprite
+addSprite(445,561,1/25,id,0,-30,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 8/full.png');
 
 //scene -7 castle crasher
 sceneYLock.push(false);
 id++;
+
+//title
 
 //maincode sprite
 addSprite(395,632,1/25,id,0,-10,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 7/main.png');

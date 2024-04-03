@@ -38,7 +38,7 @@ let modelRotation = [];
 let modelSetRotation = [];
 let anim = [];
 let sceneYLock = [];
-let zero = 8;
+let zero = 9;
 let curScene = zero; 
 
 function addSprite(ratioWidth,ratioHeight,scaleFactor,id,xOffset,yOffset,zOffset,textureResource){
@@ -84,8 +84,20 @@ function addModel(id,xOffset,yOffset,zOffset,scaleFactor,rotationAnim,additional
 }
 let id = 0; 
 
+//scene -9 hidden image
+sceneYLock.push(false);
+
+//maincode sprite
+addSprite(277,899,1/25,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 9/s1.png');
+
+//youtube
+addModel(id,0,-25,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/cnkVt9Qk9wc");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');
+
+
 //scene -8 castle crasher
 sceneYLock.push(false);
+id++;
+
 //title
 
 //maincode sprite

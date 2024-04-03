@@ -88,7 +88,7 @@ let id = 0;
 sceneYLock.push(false);
 
 //maincode sprite
-addSprite(277,899,1/25,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 9/s1.png');
+addSprite(311,803,1/25,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Challenges/Challenge 9/s1.png');
 
 //youtube
 addModel(id,0,-25,0,1/30,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://youtu.be/cnkVt9Qk9wc");});},'https://roelyoon.github.io/Portfolio/3DModels/youtube.glb');

@@ -525,6 +525,14 @@ addSprite(566,94,1/28,id,0,-5,0,'https://roelyoon.github.io/Portfolio/Images/Uni
 //link sprite
 addModel(id,0,-11,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://docs.google.com/presentation/d/1MZmHO2u6UVsTgZRNZ-cvZ-2smARZY8B3MaoTj1T9v-4/edit?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
+//scene 6 home project
+sceneYLock.push(false);
+id++;
+
+//title 
+addSprite(960,720,1/25,id,0,0,0,'https://docs.google.com/drawings/d/1zgGpZiw7kqhbgjOCZ28U6L_B5vg_y6v_2n2CyzeO25Y/edit?usp=sharing');
+
+
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);
 const titleTopLight = new THREE.PointLight(0xffffff,50000);

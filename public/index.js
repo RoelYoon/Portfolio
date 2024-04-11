@@ -532,6 +532,12 @@ id++;
 //title 
 addSprite(960,720,1/30,id,0,0,0,'https://docs.google.com/drawings/d/e/2PACX-1vTqYhnrRnFVBKdJf2J1wUsehv2koiulNVVEAsaT6afKwWxAzwMj4G5ZbiFeNWQNh4tA_sb89agNrM8_/pub?w=960&amp;h=720');
 
+//client profile
+//addSprite(960,720,1/30,id,0,-5,0,'');
+
+//pre-research interview plan
+addModel(id,0,-5,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://docs.google.com/document/d/1UsF_CmrMRNP5i4Q1jpuCHyt90Owf2hSltBhd86qJl0M/edit?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

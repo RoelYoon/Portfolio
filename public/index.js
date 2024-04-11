@@ -533,10 +533,10 @@ id++;
 addSprite(960,720,1/30,id,0,0,0,'https://docs.google.com/drawings/d/e/2PACX-1vTqYhnrRnFVBKdJf2J1wUsehv2koiulNVVEAsaT6afKwWxAzwMj4G5ZbiFeNWQNh4tA_sb89agNrM8_/pub?w=960&amp;h=720');
 
 //client profile
-addSprite(960,720,1/30,id,0,-5,0,'https://docs.google.com/drawings/d/e/2PACX-1vQCUmYar2o_20qKMQ9rv3H3qYZJqHtLAiLiK_YuyOs1YRm4ymsaVgmlyCakGKTP369d81RgBjKg5BD-/pub?w=960&amp;h=720');
+addSprite(960,720,1/30,id,0,-15,0,'https://docs.google.com/drawings/d/e/2PACX-1vQCUmYar2o_20qKMQ9rv3H3qYZJqHtLAiLiK_YuyOs1YRm4ymsaVgmlyCakGKTP369d81RgBjKg5BD-/pub?w=960&amp;h=720');
 
 //pre-research interview plan doc
-addModel(id,0,-25,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://docs.google.com/document/d/1UsF_CmrMRNP5i4Q1jpuCHyt90Owf2hSltBhd86qJl0M/edit?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+addModel(id,-5,-25,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://docs.google.com/document/d/1UsF_CmrMRNP5i4Q1jpuCHyt90Owf2hSltBhd86qJl0M/edit?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
 
 
 //light

@@ -530,7 +530,7 @@ sceneYLock.push(false);
 id++;
 
 //title 
-addSprite(960,720,1/25,id,0,0,0,'https://docs.google.com/drawings/d/1zgGpZiw7kqhbgjOCZ28U6L_B5vg_y6v_2n2CyzeO25Y/edit?usp=sharing');
+addSprite(960,720,1/25,id,0,0,0,'https://docs.google.com/drawings/d/e/2PACX-1vTqYhnrRnFVBKdJf2J1wUsehv2koiulNVVEAsaT6afKwWxAzwMj4G5ZbiFeNWQNh4tA_sb89agNrM8_/pub?w=960&amp;h=720');
 
 
 //light

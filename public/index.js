@@ -529,7 +529,7 @@ addModel(id,0,-11,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){
 sceneYLock.push(false);
 id++;
 
-accY = 0;
+var accY = 0;
 //title 
 addSprite(960,720,1/30,id,0,0,0,'https://docs.google.com/drawings/d/e/2PACX-1vTqYhnrRnFVBKdJf2J1wUsehv2koiulNVVEAsaT6afKwWxAzwMj4G5ZbiFeNWQNh4tA_sb89agNrM8_/pub?w=960&amp;h=720');
 

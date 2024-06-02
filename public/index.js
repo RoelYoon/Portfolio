@@ -548,8 +548,12 @@ addModel(id,0,accY-=15,0,3,new THREE.Vector3(0,0.03,0),function(){},function(glt
 //prototype 1
 addSprite(973,1866,1/30,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2PACX-1vTt09Av1J9cAji_23oag3qzdCRmwjjI5QcQWJnkd2m9gpaahY1GI5XxwcRVJNnJ92jS-53mz3WZEa2R/pub?w=973&amp;h=1866');
 
-//prototype 3
+//prototype side
 addSprite(960,720,1/30,id,0,accY-=43,0,'https://docs.google.com/drawings/d/e/2PACX-1vQcn50AhmpVZ2ad7kqizm3dMnJcTl-CJE-t51SM7frqxRDlulxiNkGpSNAGuJ_7ZdTMuuICqqZ2HimI/pub?w=960&amp;h=720');
+
+//prototype final
+addSprite(957,943,1/30,id,0,accY-=20,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ2ciPxxWcGWVr9fkFf1D2SamRdEumgSIQMAHCfbMPVzMW8eWvYQPbgqgkJ-wYs3X07uDhv5IF6oH0P/pub?w=957&amp;h=943');
+
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

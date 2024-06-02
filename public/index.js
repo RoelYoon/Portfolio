@@ -549,10 +549,10 @@ addModel(id,0,accY-=15,0,3,new THREE.Vector3(0,0.03,0),function(){},function(glt
 addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vTt09Av1J9cAji_23oag3qzdCRmwjjI5QcQWJnkd2m9gpaahY1GI5XxwcRVJNnJ92jS-53mz3WZEa2R/pub?w=960&amp;h=720');
 
 //prototype 2
-addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vThgc7D2gP7iMP6-689YPttJ-o56Kc6lw9UKBYzjH3iqA94F-xtwND7kk4Hg2gfSCEeyYOOLlctGFbC/pub?w=960&amp;h=720');
+addSprite(960,720,1/30,id,0,accY-=20,0,'https://docs.google.com/drawings/d/e/2PACX-1vThgc7D2gP7iMP6-689YPttJ-o56Kc6lw9UKBYzjH3iqA94F-xtwND7kk4Hg2gfSCEeyYOOLlctGFbC/pub?w=960&amp;h=720');
 
 //prototype 3
-addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vQcn50AhmpVZ2ad7kqizm3dMnJcTl-CJE-t51SM7frqxRDlulxiNkGpSNAGuJ_7ZdTMuuICqqZ2HimI/pub?w=960&amp;h=720');
+addSprite(960,720,1/30,id,0,accY-=20,0,'https://docs.google.com/drawings/d/e/2PACX-1vQcn50AhmpVZ2ad7kqizm3dMnJcTl-CJE-t51SM7frqxRDlulxiNkGpSNAGuJ_7ZdTMuuICqqZ2HimI/pub?w=960&amp;h=720');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

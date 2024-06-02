@@ -557,6 +557,17 @@ addSprite(957,943,1/30,id,0,accY-=28,0,'https://docs.google.com/drawings/d/e/2PA
 //source dentist
 addModel(id,0,accY-=20,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.medicalexpo.com/prod/whip-mix-corporation/product-74510-479299.html");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
+//building txt
+addSprite(960,720,1/30,id,0,accY-=28,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ5c5W4r6mAAIJTDHt6jSpKo4tbF5x_tOO2I82e3Wgajqcx15ZYK1mUWDouhFTFpqGZ-0nYetNJLmBG/pub?w=960&amp;h=720');
+
+//build 1
+addModel(id,-5,accY-=10,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17k7E6lOo-5I69ALoHU_B08LWVRvxi21Z/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+
+//build 2
+addModel(id,5,accY,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17m0XC3JxL6QKvbE85A291JNDrBmKgWtF/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+
+//build 3
+//addModel(id,0,accY-=21,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17hAdfmAu-_UenWBccvk5L8rS82C712A0/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
 
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);

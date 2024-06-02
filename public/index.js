@@ -558,7 +558,7 @@ addSprite(957,943,1/30,id,0,accY-=28,0,'https://docs.google.com/drawings/d/e/2PA
 addModel(id,0,accY-=20,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.medicalexpo.com/prod/whip-mix-corporation/product-74510-479299.html");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //building txt
-addSprite(960,720,1/30,id,0,accY-=10,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ5c5W4r6mAAIJTDHt6jSpKo4tbF5x_tOO2I82e3Wgajqcx15ZYK1mUWDouhFTFpqGZ-0nYetNJLmBG/pub?w=960&amp;h=720');
+addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ5c5W4r6mAAIJTDHt6jSpKo4tbF5x_tOO2I82e3Wgajqcx15ZYK1mUWDouhFTFpqGZ-0nYetNJLmBG/pub?w=960&amp;h=720');
 
 //build 1
 addModel(id,-8,accY-=5,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17k7E6lOo-5I69ALoHU_B08LWVRvxi21Z/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
@@ -566,9 +566,25 @@ addModel(id,-8,accY-=5,0,3,new THREE.Vector3(0,0.03,0),function(){},function(glt
 //build 2
 addModel(id,8,accY,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17m0XC3JxL6QKvbE85A291JNDrBmKgWtF/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
 
-//build 3
-//addModel(id,0,accY-=21,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17hAdfmAu-_UenWBccvk5L8rS82C712A0/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+//test txt
+addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ-9Pk67l_tbifT-tFziYSFgA8-hQkbgiLP1mSLZ9IXxCxh9WfhQ3ZlXO_nBHtLhIjuIQyeSXB85ft6/pub?w=960&amp;h=720');
 
+//test 1
+addModel(id,-8,accY-5,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17MdXfjZUsXAaJk_PT9oYBDiniGLf4Ug9/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+
+//test 1
+addModel(id,8,accY,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/185ltfKy184xVByNvoFm9hdx0_Cn1RLGd/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+
+/*
+//test txt
+addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ-9Pk67l_tbifT-tFziYSFgA8-hQkbgiLP1mSLZ9IXxCxh9WfhQ3ZlXO_nBHtLhIjuIQyeSXB85ft6/pub?w=960&amp;h=720');
+
+//test 1
+addModel(id,0,accY-=21,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17hAdfmAu-_UenWBccvk5L8rS82C712A0/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+
+//test 1
+addModel(id,0,accY-=21,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17hAdfmAu-_UenWBccvk5L8rS82C712A0/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
+*/
 //light
 const titleBackPLight = new THREE.PointLight(0xffffff,5000);
 const titleTopLight = new THREE.PointLight(0xffffff,50000);

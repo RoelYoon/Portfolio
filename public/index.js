@@ -552,7 +552,7 @@ addSprite(973,1866,1/30,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2P
 addSprite(960,720,1/30,id,0,accY-=43,0,'https://docs.google.com/drawings/d/e/2PACX-1vQcn50AhmpVZ2ad7kqizm3dMnJcTl-CJE-t51SM7frqxRDlulxiNkGpSNAGuJ_7ZdTMuuICqqZ2HimI/pub?w=960&amp;h=720');
 
 //prototype final
-addSprite(957,943,1/30,id,0,accY-=20,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ2ciPxxWcGWVr9fkFf1D2SamRdEumgSIQMAHCfbMPVzMW8eWvYQPbgqgkJ-wYs3X07uDhv5IF6oH0P/pub?w=957&amp;h=943');
+addSprite(957,943,1/30,id,0,accY-=28,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ2ciPxxWcGWVr9fkFf1D2SamRdEumgSIQMAHCfbMPVzMW8eWvYQPbgqgkJ-wYs3X07uDhv5IF6oH0P/pub?w=957&amp;h=943');
 
 
 //light

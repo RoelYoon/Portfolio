@@ -545,7 +545,11 @@ addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PA
 //interview audio
 addModel(id,0,accY-=21,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17hAdfmAu-_UenWBccvk5L8rS82C712A0/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
 
-//prototype 1
+addSprite(973,1866,1/30,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2PACX-1vT6bLecJaO8UOYklu_VbMjWx9QNe5NMYup-fL51v41ZyCoOtOwulQ-Z5QivicfYIFxhzWfg8lCZxGSy/pub?w=973&amp;h=1866');
+
+
+
+//prototype 2
 addSprite(973,1866,1/30,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2PACX-1vTt09Av1J9cAji_23oag3qzdCRmwjjI5QcQWJnkd2m9gpaahY1GI5XxwcRVJNnJ92jS-53mz3WZEa2R/pub?w=973&amp;h=1866');
 
 //prototype side

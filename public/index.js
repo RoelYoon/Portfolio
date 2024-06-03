@@ -551,17 +551,16 @@ addSprite(973,1866,1/30,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2P
 //prototype 2
 addSprite(973,1866,1/30,id,0,accY-=55,0,'https://docs.google.com/drawings/d/e/2PACX-1vTt09Av1J9cAji_23oag3qzdCRmwjjI5QcQWJnkd2m9gpaahY1GI5XxwcRVJNnJ92jS-53mz3WZEa2R/pub?w=973&amp;h=1866');
 
-//source dog feeder
-addModel(id,0,accY-=20,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.nexxtsolutions.com/connectivity/internal-products/NHA-P610/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
-
 //prototype side
-addSprite(960,720,1/30,id,0,accY-=43,0,'https://docs.google.com/drawings/d/e/2PACX-1vQcn50AhmpVZ2ad7kqizm3dMnJcTl-CJE-t51SM7frqxRDlulxiNkGpSNAGuJ_7ZdTMuuICqqZ2HimI/pub?w=960&amp;h=720');
+addSprite(960,720,1/30,id,0,accY-=25,0,'https://docs.google.com/drawings/d/e/2PACX-1vQcn50AhmpVZ2ad7kqizm3dMnJcTl-CJE-t51SM7frqxRDlulxiNkGpSNAGuJ_7ZdTMuuICqqZ2HimI/pub?w=960&amp;h=720');
 
 //prototype final
 addSprite(957,943,1/30,id,0,accY-=28,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ2ciPxxWcGWVr9fkFf1D2SamRdEumgSIQMAHCfbMPVzMW8eWvYQPbgqgkJ-wYs3X07uDhv5IF6oH0P/pub?w=957&amp;h=943');
 
+//source dog feeder
+addModel(id,-8,accY-=20,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.nexxtsolutions.com/connectivity/internal-products/NHA-P610/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 //source dentist
-addModel(id,0,accY-=20,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.medicalexpo.com/prod/whip-mix-corporation/product-74510-479299.html");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addModel(id,8,accY,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.medicalexpo.com/prod/whip-mix-corporation/product-74510-479299.html");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //building txt
 addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ5c5W4r6mAAIJTDHt6jSpKo4tbF5x_tOO2I82e3Wgajqcx15ZYK1mUWDouhFTFpqGZ-0nYetNJLmBG/pub?w=960&amp;h=720');

@@ -594,7 +594,7 @@ addModel(id,8,accY,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){g
 
 addSprite(964,2031,1/30,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2PACX-1vTVlBjpu8BQGpYF_IA1AVTQZAf3Xt3ObfuFUe68U0wIugzG3nAjpn8rkn98gt4bOlixsruxn_JBtbT1/pub?w=964&amp;h=2031');
 
-addSprite(963,895,1/45,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2PACX-1vRvZx91ufSl9Zvb_FDKZ2orAsd5BE1eO_JM0frvTKwSYAjx2Zq4_E0Aui5ewe3IxJImqN8IcLCn-z8j/pub?w=963&amp;h=895');
+addSprite(963,895,1/30,id,0,accY-=45,0,'https://docs.google.com/drawings/d/e/2PACX-1vRvZx91ufSl9Zvb_FDKZ2orAsd5BE1eO_JM0frvTKwSYAjx2Zq4_E0Aui5ewe3IxJImqN8IcLCn-z8j/pub?w=963&amp;h=895');
 /*
 //test txt
 addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ-9Pk67l_tbifT-tFziYSFgA8-hQkbgiLP1mSLZ9IXxCxh9WfhQ3ZlXO_nBHtLhIjuIQyeSXB85ft6/pub?w=960&amp;h=720');

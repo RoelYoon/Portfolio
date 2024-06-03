@@ -592,6 +592,8 @@ addModel(id,-8,accY-=48,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gl
 //final reaction
 addModel(id,8,accY,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17jzDTtRiHnaF6q2EgJI-QzqCligKe15D/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
 
+addSprite(964,2031,1/30,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2PACX-1vTVlBjpu8BQGpYF_IA1AVTQZAf3Xt3ObfuFUe68U0wIugzG3nAjpn8rkn98gt4bOlixsruxn_JBtbT1/pub?w=964&amp;h=2031');
+
 /*
 //test txt
 addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ-9Pk67l_tbifT-tFziYSFgA8-hQkbgiLP1mSLZ9IXxCxh9WfhQ3ZlXO_nBHtLhIjuIQyeSXB85ft6/pub?w=960&amp;h=720');

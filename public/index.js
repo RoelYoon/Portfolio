@@ -558,7 +558,7 @@ addSprite(960,720,1/30,id,0,accY-=43,0,'https://docs.google.com/drawings/d/e/2PA
 addSprite(957,943,1/30,id,0,accY-=28,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ2ciPxxWcGWVr9fkFf1D2SamRdEumgSIQMAHCfbMPVzMW8eWvYQPbgqgkJ-wYs3X07uDhv5IF6oH0P/pub?w=957&amp;h=943');
 
 //source dog feeder
-addModel(id,-8,accY-=20,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.nexxtsolutions.com/connectivity/internal-products/NHA-P610/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addModel(id,-8,accY-=19,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.nexxtsolutions.com/connectivity/internal-products/NHA-P610/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 //source dentist
 addModel(id,8,accY,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.medicalexpo.com/prod/whip-mix-corporation/product-74510-479299.html");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
@@ -594,7 +594,7 @@ addModel(id,8,accY,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){g
 
 addSprite(964,2031,1/30,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2PACX-1vTVlBjpu8BQGpYF_IA1AVTQZAf3Xt3ObfuFUe68U0wIugzG3nAjpn8rkn98gt4bOlixsruxn_JBtbT1/pub?w=964&amp;h=2031');
 
-addSprite(963,895,1/30,id,0,accY-=42,0,'https://docs.google.com/drawings/d/e/2PACX-1vRvZx91ufSl9Zvb_FDKZ2orAsd5BE1eO_JM0frvTKwSYAjx2Zq4_E0Aui5ewe3IxJImqN8IcLCn-z8j/pub?w=963&amp;h=895');
+addSprite(963,895,1/30,id,0,accY-=40,0,'https://docs.google.com/drawings/d/e/2PACX-1vRvZx91ufSl9Zvb_FDKZ2orAsd5BE1eO_JM0frvTKwSYAjx2Zq4_E0Aui5ewe3IxJImqN8IcLCn-z8j/pub?w=963&amp;h=895');
 /*
 //test txt
 addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ-9Pk67l_tbifT-tFziYSFgA8-hQkbgiLP1mSLZ9IXxCxh9WfhQ3ZlXO_nBHtLhIjuIQyeSXB85ft6/pub?w=960&amp;h=720');

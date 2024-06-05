@@ -573,7 +573,7 @@ addModel(id,-8,accY-=5,0,3,new THREE.Vector3(0,0.03,0),function(){},function(glt
 addModel(id,8,accY,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17m0XC3JxL6QKvbE85A291JNDrBmKgWtF/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');
 
 //test txt
-addSprite(960,720,1/30,id,0,accY-=12,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ-9Pk67l_tbifT-tFziYSFgA8-hQkbgiLP1mSLZ9IXxCxh9WfhQ3ZlXO_nBHtLhIjuIQyeSXB85ft6/pub?w=960&amp;h=720');
+addSprite(960,720,1/30,id,0,accY-=10,0,'https://docs.google.com/drawings/d/e/2PACX-1vQ-9Pk67l_tbifT-tFziYSFgA8-hQkbgiLP1mSLZ9IXxCxh9WfhQ3ZlXO_nBHtLhIjuIQyeSXB85ft6/pub?w=960&amp;h=720');
 
 //test 1
 addModel(id,-8,accY-=5,0,3,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://drive.google.com/file/d/17MdXfjZUsXAaJk_PT9oYBDiniGLf4Ug9/view?usp=sharing");});},'https://roelyoon.github.io/Portfolio/3DModels/drive.glb');

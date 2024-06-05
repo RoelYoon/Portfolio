@@ -549,10 +549,10 @@ addModel(id,0,accY-=21,0,3,new THREE.Vector3(0,0.03,0),function(){},function(glt
 addSprite(972,2016,1/30,id,0,accY-=30,0,'https://docs.google.com/drawings/d/e/2PACX-1vT6bLecJaO8UOYklu_VbMjWx9QNe5NMYup-fL51v41ZyCoOtOwulQ-Z5QivicfYIFxhzWfg8lCZxGSy/pub?w=973&amp;h=1866');
 
 //source dog feeder
-addModel(id,0,accY-=15,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.nexxtsolutions.com/connectivity/internal-products/NHA-P610/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
+addModel(id,0,accY-=3,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.nexxtsolutions.com/connectivity/internal-products/NHA-P610/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //prototype 2
-addSprite(973,1866,1/30,id,0,accY-=53,0,'https://docs.google.com/drawings/d/e/2PACX-1vTt09Av1J9cAji_23oag3qzdCRmwjjI5QcQWJnkd2m9gpaahY1GI5XxwcRVJNnJ92jS-53mz3WZEa2R/pub?w=973&amp;h=1866');
+addSprite(973,1866,1/30,id,0,accY-=55,0,'https://docs.google.com/drawings/d/e/2PACX-1vTt09Av1J9cAji_23oag3qzdCRmwjjI5QcQWJnkd2m9gpaahY1GI5XxwcRVJNnJ92jS-53mz3WZEa2R/pub?w=973&amp;h=1866');
 
 //source dentist
 addModel(id,0,accY,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.medicalexpo.com/prod/whip-mix-corporation/product-74510-479299.html");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');

@@ -552,7 +552,7 @@ addSprite(972,2016,1/30,id,0,accY-=32,0,'https://docs.google.com/drawings/d/e/2P
 addModel(id,0,accY-=6,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.nexxtsolutions.com/connectivity/internal-products/NHA-P610/");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
 
 //prototype 2
-addSprite(972,2136,1/30,id,0,accY-=60,0,'https://docs.google.com/drawings/d/e/2PACX-1vTt09Av1J9cAji_23oag3qzdCRmwjjI5QcQWJnkd2m9gpaahY1GI5XxwcRVJNnJ92jS-53mz3WZEa2R/pub?w=972&amp;h=2136');
+addSprite(972,2136,1/30,id,0,accY-=62,0,'https://docs.google.com/drawings/d/e/2PACX-1vTt09Av1J9cAji_23oag3qzdCRmwjjI5QcQWJnkd2m9gpaahY1GI5XxwcRVJNnJ92jS-53mz3WZEa2R/pub?w=972&amp;h=2136');
 
 //source dentist
 addModel(id,0,accY-=28,0,1/2,new THREE.Vector3(0,0.03,0),function(){},function(gltf){gltf.scene.on('click',function(ev){window.open("https://www.medicalexpo.com/prod/whip-mix-corporation/product-74510-479299.html");});},'https://roelyoon.github.io/Portfolio/3DModels/checkmark.glb');
